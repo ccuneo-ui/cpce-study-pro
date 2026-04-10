@@ -1,7 +1,7 @@
 import { Analytics } from "@vercel/analytics/react";
 import { C, sCard, sBtn, globalCSS, DOMAIN_ICONS } from "../lib/constants";
 
-export default function HomeScreen({ questions, flashcards, domains, stats, onStartQuiz, onStartFlashcards, onStartTimed, onShowDomainScores }) {
+export default function HomeScreen({ questions, flashcards, domains, stats, user, onStartQuiz, onStartFlashcards, onStartTimed, onShowDomainScores, onShowAccount, onShowAuth }) {
   const pct = stats.total ? Math.round((stats.correct / stats.total) * 100) : 0;
 
   const statCards = [
@@ -14,6 +14,35 @@ export default function HomeScreen({ questions, flashcards, domains, stats, onSt
   return (
     <div style={{ fontFamily: "'DM Sans', sans-serif", color: C.text, minHeight: "100vh", background: C.bg, padding: 20, maxWidth: 600, margin: "0 auto" }}>
       <style>{globalCSS}</style>
+
+      {/* Account Button */}
+      <div style={{ display: "flex", justifyContent: "flex-end", marginBottom: 8 }}>
+        {user ? (
+          <button onClick={onShowAccount} className="hoverable" style={{
+            background: C.card, border: `1px solid ${C.bdr}`, borderRadius: 10,
+            padding: "8px 14px", cursor: "pointer", fontFamily: "inherit", color: C.text,
+            display: "flex", alignItems: "center", gap: 8, fontSize: 13,
+          }}>
+            <span style={{
+              width: 26, height: 26, borderRadius: "50%",
+              background: `linear-gradient(135deg, ${C.accent}, ${C.al})`,
+              display: "flex", alignItems: "center", justifyContent: "center",
+              fontSize: 12, fontWeight: 700, color: "#fff",
+            }}>
+              {(user.email?.[0] || "?").toUpperCase()}
+            </span>
+            Account
+          </button>
+        ) : (
+          <button onClick={onShowAuth} className="hoverable" style={{
+            background: C.accent, border: "none", borderRadius: 10,
+            padding: "8px 16px", cursor: "pointer", fontFamily: "inherit",
+            color: "#fff", fontSize: 13, fontWeight: 600,
+          }}>
+            Sign In
+          </button>
+        )}
+      </div>
 
       {/* Header */}
       <div style={{ textAlign: "center", marginBottom: 28, animation: "fi 0.4s ease-out" }}>
