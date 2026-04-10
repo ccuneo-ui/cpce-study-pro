@@ -1,7 +1,7 @@
 import { Analytics } from "@vercel/analytics/react";
 import { C, sCard, sBtn, globalCSS, DOMAIN_ICONS } from "../lib/constants";
 
-export default function HomeScreen({ questions, flashcards, domains, stats, user, onStartQuiz, onStartFlashcards, onStartTimed, onShowDomainScores, onShowAccount, onShowAuth }) {
+export default function HomeScreen({ questions, flashcards, domains, stats, user, isPro, questionsRemaining, freeLimit, onStartQuiz, onStartFlashcards, onStartTimed, onShowDomainScores, onShowAccount, onShowAuth, onUpgrade }) {
   const pct = stats.total ? Math.round((stats.correct / stats.total) * 100) : 0;
 
   const statCards = [
@@ -62,6 +62,32 @@ export default function HomeScreen({ questions, flashcards, domains, stats, user
           </div>
         ))}
       </div>
+
+      {/* Free Tier Banner */}
+      {!isPro && (
+        <button onClick={onUpgrade} className="hoverable" style={{
+          ...sCard, width: "100%", cursor: "pointer", fontFamily: "inherit",
+          marginBottom: 16, textAlign: "left",
+          background: questionsRemaining <= 0 ? `${C.wrong}11` : `${C.accent}08`,
+          borderColor: questionsRemaining <= 0 ? `${C.wrong}44` : C.bdr,
+          display: "flex", alignItems: "center", justifyContent: "space-between",
+        }}>
+          <div>
+            <div style={{ fontSize: 13, fontWeight: 600, color: questionsRemaining <= 0 ? C.wrong : C.gold }}>
+              {questionsRemaining <= 0 ? "Free questions used up" : `${questionsRemaining} of ${freeLimit} free questions left`}
+            </div>
+            <div style={{ fontSize: 12, color: C.dim, marginTop: 2 }}>
+              Upgrade to Pro for all {questions.length} questions
+            </div>
+          </div>
+          <div style={{
+            background: C.accent, color: "#fff", fontSize: 12, fontWeight: 700,
+            padding: "6px 12px", borderRadius: 8, whiteSpace: "nowrap",
+          }}>
+            Upgrade
+          </div>
+        </button>
+      )}
 
       {/* Actions */}
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10, marginBottom: 20 }}>

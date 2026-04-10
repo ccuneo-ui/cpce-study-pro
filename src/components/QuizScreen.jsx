@@ -9,6 +9,11 @@ export default function QuizScreen({
   onQuit,
   onStatsUpdate,
   stats,
+  canAnswer,
+  onPaywall,
+  onQuestionAnswered,
+  isPro,
+  questionsRemaining,
 }) {
   const [currentQ, setCurrentQ] = useState(null);
   const [selected, setSelected] = useState(null);
@@ -77,6 +82,7 @@ export default function QuizScreen({
     newStats.domainStats[currentQ.domain].total++;
     if (isCorrect) newStats.domainStats[currentQ.domain].correct++;
     onStatsUpdate(newStats);
+    if (onQuestionAnswered) onQuestionAnswered();
 
     setSessionResults(r => [...r, { question: currentQ.question, correct: isCorrect, domain: currentQ.domain }]);
   };
@@ -84,6 +90,11 @@ export default function QuizScreen({
   const handleNext = () => {
     if (questionNum >= 10) {
       onFinish(sessionResults.concat([{ question: currentQ.question, correct: selected === currentQ.correct, domain: currentQ.domain }]).slice(-10));
+      return;
+    }
+    // Check if free user hit their limit
+    if (!isPro && onPaywall && !canAnswer) {
+      onPaywall();
       return;
     }
     nextQuestion();
@@ -96,7 +107,12 @@ export default function QuizScreen({
       <style>{globalCSS}</style>
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 16 }}>
         <button onClick={onQuit} style={{ background: "none", border: "none", color: C.dim, cursor: "pointer", fontSize: 14, fontFamily: "inherit" }}>← Quit</button>
-        <span style={{ fontFamily: "'Space Mono'", fontSize: 13, color: C.dim }}>Q {questionNum}/10</span>
+        <div style={{ textAlign: "center" }}>
+          <span style={{ fontFamily: "'Space Mono'", fontSize: 13, color: C.dim }}>Q {questionNum}/10</span>
+          {!isPro && questionsRemaining !== undefined && questionsRemaining < 10 && (
+            <div style={{ fontSize: 11, color: C.gold, marginTop: 2 }}>{questionsRemaining} free left</div>
+          )}
+        </div>
         {timedMode && (
           <span style={{ fontFamily: "'Space Mono'", fontSize: 16, fontWeight: 700, color: timeLeft <= 10 ? C.wrong : C.al, animation: timeLeft <= 10 ? "pulse 0.5s infinite" : "none" }}>
             ⏱ {timeLeft}s

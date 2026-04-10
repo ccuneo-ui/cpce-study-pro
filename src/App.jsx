@@ -2,6 +2,7 @@ import { useState, useEffect, useCallback } from "react";
 import { QUESTIONS } from "./data/questions";
 import { FLASHCARDS } from "./data/flashcards";
 import { useAuth } from "./lib/AuthContext";
+import { useSubscription } from "./lib/SubscriptionContext";
 import HomeScreen from "./components/HomeScreen";
 import QuizScreen from "./components/QuizScreen";
 import FlashcardScreen from "./components/FlashcardScreen";
@@ -9,6 +10,8 @@ import ResultsScreen from "./components/ResultsScreen";
 import DomainScores from "./components/DomainScores";
 import AuthScreen from "./components/AuthScreen";
 import AccountScreen from "./components/AccountScreen";
+import UpgradeScreen from "./components/UpgradeScreen";
+import PaywallModal from "./components/PaywallModal";
 
 const DOMAINS = [...new Set(QUESTIONS.map(q => q.domain))];
 const STORAGE_KEY = "compexampro-stats";
@@ -16,12 +19,14 @@ const DEFAULT_STATS = { correct: 0, total: 0, streak: 0, bestStreak: 0, points: 
 
 export default function CompExamProApp() {
   const { user, loading, signUp, signIn, signOut } = useAuth();
+  const { isPro, questionsUsed, questionsRemaining, canAnswer, recordQuestionAnswered, FREE_QUESTION_LIMIT } = useSubscription();
   const [screen, setScreen] = useState("home");
   const [selectedDomain, setSelectedDomain] = useState("All");
   const [timedMode, setTimedMode] = useState(false);
   const [sessionResults, setSessionResults] = useState([]);
   const [stats, setStats] = useState(DEFAULT_STATS);
   const [skippedAuth, setSkippedAuth] = useState(false);
+  const [showPaywall, setShowPaywall] = useState(false);
 
   // Check if user previously skipped auth
   useEffect(() => {
@@ -29,6 +34,15 @@ export default function CompExamProApp() {
       const skipped = localStorage.getItem("compexampro-skipped-auth");
       if (skipped) setSkippedAuth(true);
     } catch {}
+  }, []);
+
+  // Check for upgrade success redirect
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("upgraded") === "true") {
+      window.history.replaceState({}, "", window.location.pathname);
+      // The SubscriptionContext will pick up the new subscription on focus/load
+    }
   }, []);
 
   // Load stats from localStorage
@@ -48,12 +62,20 @@ export default function CompExamProApp() {
   // ── Navigation handlers ──
 
   const startQuiz = (domain) => {
+    if (!canAnswer) {
+      setShowPaywall(true);
+      return;
+    }
     setSelectedDomain(domain);
     setTimedMode(false);
     setScreen("quiz");
   };
 
   const startTimed = (domain) => {
+    if (!canAnswer) {
+      setShowPaywall(true);
+      return;
+    }
     setSelectedDomain(domain);
     setTimedMode(true);
     setScreen("quiz");
@@ -113,12 +135,26 @@ export default function CompExamProApp() {
 
   // ── Screen routing ──
 
+  if (screen === "upgrade") {
+    return (
+      <UpgradeScreen
+        onBack={goHome}
+        questionsUsed={questionsUsed}
+        freeLimit={FREE_QUESTION_LIMIT}
+      />
+    );
+  }
+
   if (screen === "account") {
     return (
       <AccountScreen
         user={user}
         stats={stats}
+        isPro={isPro}
+        questionsUsed={questionsUsed}
+        freeLimit={FREE_QUESTION_LIMIT}
         onSignOut={handleSignOut}
+        onUpgrade={() => setScreen("upgrade")}
         onBack={goHome}
       />
     );
@@ -126,15 +162,30 @@ export default function CompExamProApp() {
 
   if (screen === "quiz") {
     return (
-      <QuizScreen
-        questions={QUESTIONS}
-        selectedDomain={selectedDomain}
-        timedMode={timedMode}
-        stats={stats}
-        onStatsUpdate={saveStats}
-        onFinish={handleQuizFinish}
-        onQuit={goHome}
-      />
+      <>
+        <QuizScreen
+          questions={QUESTIONS}
+          selectedDomain={selectedDomain}
+          timedMode={timedMode}
+          stats={stats}
+          onStatsUpdate={saveStats}
+          onFinish={handleQuizFinish}
+          onQuit={goHome}
+          canAnswer={canAnswer}
+          onPaywall={() => setShowPaywall(true)}
+          onQuestionAnswered={recordQuestionAnswered}
+          isPro={isPro}
+          questionsRemaining={questionsRemaining}
+        />
+        {showPaywall && (
+          <PaywallModal
+            questionsUsed={questionsUsed}
+            freeLimit={FREE_QUESTION_LIMIT}
+            onUpgrade={() => { setShowPaywall(false); setScreen("upgrade"); }}
+            onClose={() => { setShowPaywall(false); goHome(); }}
+          />
+        )}
+      </>
     );
   }
 
@@ -174,18 +225,32 @@ export default function CompExamProApp() {
 
   // Default: home
   return (
-    <HomeScreen
-      questions={QUESTIONS}
-      flashcards={FLASHCARDS}
-      domains={DOMAINS}
-      stats={stats}
-      user={user}
-      onStartQuiz={startQuiz}
-      onStartFlashcards={startFlashcards}
-      onStartTimed={startTimed}
-      onShowDomainScores={() => setScreen("domainScores")}
-      onShowAccount={() => setScreen("account")}
-      onShowAuth={() => { setSkippedAuth(false); setScreen("home"); }}
-    />
+    <>
+      <HomeScreen
+        questions={QUESTIONS}
+        flashcards={FLASHCARDS}
+        domains={DOMAINS}
+        stats={stats}
+        user={user}
+        isPro={isPro}
+        questionsRemaining={questionsRemaining}
+        freeLimit={FREE_QUESTION_LIMIT}
+        onStartQuiz={startQuiz}
+        onStartFlashcards={startFlashcards}
+        onStartTimed={startTimed}
+        onShowDomainScores={() => setScreen("domainScores")}
+        onShowAccount={() => setScreen("account")}
+        onShowAuth={() => { setSkippedAuth(false); setScreen("home"); }}
+        onUpgrade={() => setScreen("upgrade")}
+      />
+      {showPaywall && (
+        <PaywallModal
+          questionsUsed={questionsUsed}
+          freeLimit={FREE_QUESTION_LIMIT}
+          onUpgrade={() => { setShowPaywall(false); setScreen("upgrade"); }}
+          onClose={() => setShowPaywall(false)}
+        />
+      )}
+    </>
   );
 }
