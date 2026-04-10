@@ -103,6 +103,8 @@ export default function AuthScreen({ onSignUp, onSignIn, onSkip }) {
             <label style={{ fontSize: 13, fontWeight: 600, color: C.dim, display: "block", marginBottom: 6 }}>Email</label>
             <input
               type="email"
+              name="email"
+              autoComplete="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="you@example.com"
@@ -114,6 +116,8 @@ export default function AuthScreen({ onSignUp, onSignIn, onSkip }) {
             <label style={{ fontSize: 13, fontWeight: 600, color: C.dim, display: "block", marginBottom: 6 }}>Password</label>
             <input
               type="password"
+              name="password"
+              autoComplete={mode === "signup" ? "new-password" : "current-password"}
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               placeholder="At least 6 characters"
@@ -126,6 +130,8 @@ export default function AuthScreen({ onSignUp, onSignIn, onSkip }) {
               <label style={{ fontSize: 13, fontWeight: 600, color: C.dim, display: "block", marginBottom: 6 }}>Confirm Password</label>
               <input
                 type="password"
+                name="confirm-password"
+                autoComplete="new-password"
                 value={confirmPassword}
                 onChange={(e) => setConfirmPassword(e.target.value)}
                 placeholder="Re-enter your password"
