@@ -67,7 +67,7 @@ export default function HomeScreen({ questions, flashcards, domains, stats, user
       {!isPro && (
         <button onClick={onUpgrade} className="hoverable" style={{
           ...sCard, width: "100%", cursor: "pointer", fontFamily: "inherit",
-          marginBottom: 16, textAlign: "left",
+          marginBottom: 16, textAlign: "left", color: C.text,
           background: questionsRemaining <= 0 ? `${C.wrong}11` : `${C.accent}08`,
           borderColor: questionsRemaining <= 0 ? `${C.wrong}44` : C.bdr,
           display: "flex", alignItems: "center", justifyContent: "space-between",
