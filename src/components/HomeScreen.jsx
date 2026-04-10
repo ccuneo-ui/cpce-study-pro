@@ -41,17 +41,17 @@ export default function HomeScreen({ questions, flashcards, domains, stats, onSt
           <span style={{ fontSize: 16, fontWeight: 700, color: "#fff" }}>Practice Questions</span>
           <span style={{ fontSize: 12, opacity: 0.8, color: "#e0e0ff" }}>10-question sets</span>
         </button>
-        <button className="hoverable" onClick={() => onStartFlashcards("All")} style={{ ...sCard, cursor: "pointer", fontFamily: "inherit", textAlign: "left", display: "flex", flexDirection: "column", gap: 6 }}>
+        <button className="hoverable" onClick={() => onStartFlashcards("All")} style={{ ...sCard, color: C.text, cursor: "pointer", fontFamily: "inherit", textAlign: "left", display: "flex", flexDirection: "column", gap: 6 }}>
           <span style={{ fontSize: 26 }}>🗂️</span>
           <span style={{ fontSize: 16, fontWeight: 700 }}>Flashcards</span>
           <span style={{ fontSize: 12, color: C.dim }}>Flip to reveal</span>
         </button>
-        <button className="hoverable" onClick={() => onStartTimed("All")} style={{ ...sCard, cursor: "pointer", fontFamily: "inherit", textAlign: "left", display: "flex", flexDirection: "column", gap: 6 }}>
+        <button className="hoverable" onClick={() => onStartTimed("All")} style={{ ...sCard, color: C.text, cursor: "pointer", fontFamily: "inherit", textAlign: "left", display: "flex", flexDirection: "column", gap: 6 }}>
           <span style={{ fontSize: 26 }}>⚡</span>
           <span style={{ fontSize: 16, fontWeight: 700 }}>Timed Challenge</span>
           <span style={{ fontSize: 12, color: C.dim }}>30s per question</span>
         </button>
-        <button className="hoverable" onClick={onShowDomainScores} style={{ ...sCard, cursor: "pointer", fontFamily: "inherit", textAlign: "left", display: "flex", flexDirection: "column", gap: 6 }}>
+        <button className="hoverable" onClick={onShowDomainScores} style={{ ...sCard, color: C.text, cursor: "pointer", fontFamily: "inherit", textAlign: "left", display: "flex", flexDirection: "column", gap: 6 }}>
           <span style={{ fontSize: 26 }}>📊</span>
           <span style={{ fontSize: 16, fontWeight: 700 }}>Domain Scores</span>
           <span style={{ fontSize: 12, color: C.dim }}>Track progress</span>
