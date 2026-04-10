@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 // ─── QUESTION BANK: 170+ questions across all 8 CECE domains ─────────
 const QUESTIONS = [
@@ -603,6 +604,7 @@ export default function CECEStudyApp() {
       <div style={{ textAlign: "center", padding: 16, fontSize: 12, color: C.dim }}>
         Questions aligned with CECE exam content domains
       </div>
+      <Analytics />
     </div>
   );
 }
