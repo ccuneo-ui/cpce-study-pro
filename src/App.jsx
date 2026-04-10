@@ -1,4 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from "react";
+import { Analytics } from "@vercel/analytics/react";
+import { Analytics } from "@vercel/analytics/react";
 
 // ─── QUESTION BANK: 170+ questions across all 8 CECE domains ─────────
 const QUESTIONS = [
@@ -225,7 +227,7 @@ const C = {
 };
 
 // ─── MAIN APP ────────────────────────────────────────────────────────────
-export default function CECEStudyApp() {
+export default function CompExamProApp() {
   const [screen, setScreen] = useState("home");
   const [selectedDomain, setSelectedDomain] = useState("All");
   const [currentQ, setCurrentQ] = useState(null);
@@ -249,14 +251,14 @@ export default function CECEStudyApp() {
   // Load stats from storage
   useEffect(() => {
     try {
-        const r = localStorage.getItem("cece-stats");
+        const r = localStorage.getItem("compexampro-stats");
         if (r) setStats(JSON.parse(r));
       } catch {}
   }, []);
 
   // Save stats
   const saveStats = useCallback((s) => {
-    try { localStorage.setItem("cece-stats", JSON.stringify(s)); } catch {}
+    try { localStorage.setItem("compexampro-stats", JSON.stringify(s)); } catch {}
   }, []);
 
   // Timer
@@ -536,8 +538,8 @@ export default function CECEStudyApp() {
       <style>{css}</style>
       {/* Header */}
       <div style={{ textAlign: "center", marginBottom: 28, animation: "fi 0.4s ease-out" }}>
-        <div style={{ fontSize: 14, fontWeight: 700, color: C.accent, textTransform: "uppercase", letterSpacing: 3, marginBottom: 6 }}>CECE Study Pro</div>
-        <h1 style={{ fontSize: 26, fontWeight: 700, lineHeight: 1.2 }}>Counselor Prep</h1>
+        <div style={{ fontSize: 14, fontWeight: 700, color: C.accent, textTransform: "uppercase", letterSpacing: 3, marginBottom: 6 }}>CompExamPro</div>
+        <h1 style={{ fontSize: 26, fontWeight: 700, lineHeight: 1.2 }}>Counselor Exam Prep</h1>
         <p style={{ color: C.dim, fontSize: 14, marginTop: 6 }}>
           {QUESTIONS.length} practice questions · {FLASHCARDS.length} flashcards · 8 domains
         </p>
@@ -600,9 +602,13 @@ export default function CECEStudyApp() {
       </div>
 
       {/* Footer */}
-      <div style={{ textAlign: "center", padding: 16, fontSize: 12, color: C.dim }}>
-        Questions aligned with CECE exam content domains
+      <div style={{ textAlign: "center", padding: 16, fontSize: 12, color: C.dim, lineHeight: 1.6 }}>
+        <div>{QUESTIONS.length} practice questions across all 8 CACREP domains</div>
+        <div style={{ marginTop: 6, fontSize: 11, color: C.dim, opacity: 0.7 }}>
+          CompExamPro is not affiliated with, endorsed by, or associated with NBCC, CCE, CACREP, or any licensing body. CPCE, NCE, and NCMHCE are trademarks of their respective owners.
+        </div>
       </div>
+      <Analytics />
     </div>
   );
 }
