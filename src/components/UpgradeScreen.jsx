@@ -53,29 +53,20 @@ export default function UpgradeScreen({ onBack, questionsUsed, freeLimit }) {
     setError(null);
 
     try {
-      const { data: { session } } = await supabase.auth.getSession();
-      const response = await fetch(
-        `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/create-checkout`,
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${session.access_token}`,
-            apikey: import.meta.env.VITE_SUPABASE_ANON_KEY,
-          },
-          body: JSON.stringify({
-            priceId: plan.stripePriceId,
-            successUrl: window.location.origin + "/?upgraded=true",
-            cancelUrl: window.location.origin + "/?cancelled=true",
-          }),
-        }
-      );
+      const { data, error: fnError } = await supabase.functions.invoke("create-checkout", {
+        body: {
+          priceId: plan.stripePriceId,
+          successUrl: window.location.origin + "/?upgraded=true",
+          cancelUrl: window.location.origin + "/?cancelled=true",
+        },
+      });
 
-      const result = await response.json();
-      if (result.url) {
-        window.location.href = result.url;
+      if (fnError) {
+        setError(fnError.message || "Could not start checkout. Please try again.");
+      } else if (data?.url) {
+        window.location.href = data.url;
       } else {
-        setError(result.error || "Could not start checkout. Please try again.");
+        setError(data?.error || "Could not start checkout. Please try again.");
       }
     } catch (err) {
       setError("Something went wrong. Please try again.");
