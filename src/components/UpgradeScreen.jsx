@@ -61,6 +61,7 @@ export default function UpgradeScreen({ onBack, questionsUsed, freeLimit }) {
           headers: {
             "Content-Type": "application/json",
             Authorization: `Bearer ${session.access_token}`,
+            apikey: import.meta.env.VITE_SUPABASE_ANON_KEY,
           },
           body: JSON.stringify({
             priceId: plan.stripePriceId,
