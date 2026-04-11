@@ -13,6 +13,7 @@ import AuthScreen from "./components/AuthScreen";
 import AccountScreen from "./components/AccountScreen";
 import UpgradeScreen from "./components/UpgradeScreen";
 import PaywallModal from "./components/PaywallModal";
+import LegalScreen from "./components/LegalScreen";
 
 const DOMAINS = [...new Set(QUESTIONS.map(q => q.domain))];
 const STORAGE_KEY = "compexampro-stats";
@@ -198,6 +199,10 @@ export default function CompExamProApp() {
 
   // ── Screen routing ──
 
+  if (screen === "privacy" || screen === "terms") {
+    return <LegalScreen page={screen} onBack={goHome} />;
+  }
+
   if (screen === "upgrade") {
     return (
       <UpgradeScreen
@@ -305,6 +310,8 @@ export default function CompExamProApp() {
         onShowAccount={() => setScreen("account")}
         onShowAuth={() => { setSkippedAuth(false); setScreen("home"); }}
         onUpgrade={() => setScreen("upgrade")}
+        onShowPrivacy={() => setScreen("privacy")}
+        onShowTerms={() => setScreen("terms")}
       />
       {showPaywall && (
         <PaywallModal
