@@ -1,7 +1,7 @@
 import { Analytics } from "@vercel/analytics/react";
 import { C, sCard, sBtn, globalCSS, DOMAIN_ICONS } from "../lib/constants";
 
-export default function HomeScreen({ questions, flashcards, domains, stats, user, isPro, questionsRemaining, freeLimit, onStartQuiz, onStartFlashcards, onStartTimed, onShowDomainScores, onShowAccount, onShowAuth, onUpgrade }) {
+export default function HomeScreen({ questions, flashcards, domains, stats, user, isPro, questionsRemaining, freeLimit, onStartQuiz, onStartFlashcards, onStartTimed, onShowDomainScores, onShowAccount, onShowAuth, onUpgrade, onShowPrivacy, onShowTerms }) {
   const pct = stats.total ? Math.round((stats.correct / stats.total) * 100) : 0;
 
   const statCards = [
@@ -138,7 +138,11 @@ export default function HomeScreen({ questions, flashcards, domains, stats, user
       {/* Footer */}
       <div style={{ textAlign: "center", padding: 16, fontSize: 12, color: C.dim, lineHeight: 1.6 }}>
         <div>{questions.length} practice questions across all 8 CACREP domains</div>
-        <div style={{ marginTop: 6, fontSize: 11, color: C.dim, opacity: 0.7 }}>
+        <div style={{ marginTop: 10, display: "flex", justifyContent: "center", gap: 16 }}>
+          <button onClick={onShowPrivacy} style={{ background: "none", border: "none", color: C.accent, cursor: "pointer", fontFamily: "inherit", fontSize: 12 }}>Privacy Policy</button>
+          <button onClick={onShowTerms} style={{ background: "none", border: "none", color: C.accent, cursor: "pointer", fontFamily: "inherit", fontSize: 12 }}>Terms of Service</button>
+        </div>
+        <div style={{ marginTop: 8, fontSize: 11, color: C.dim, opacity: 0.7 }}>
           CompExamPro is not affiliated with, endorsed by, or associated with NBCC, CCE, CACREP, or any licensing body. CPCE, NCE, and NCMHCE are trademarks of their respective owners.
         </div>
       </div>
