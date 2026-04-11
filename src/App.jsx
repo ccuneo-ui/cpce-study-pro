@@ -1,8 +1,9 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import { QUESTIONS } from "./data/questions";
 import { FLASHCARDS } from "./data/flashcards";
 import { useAuth } from "./lib/AuthContext";
 import { useSubscription } from "./lib/SubscriptionContext";
+import { supabase } from "./lib/supabase";
 import HomeScreen from "./components/HomeScreen";
 import QuizScreen from "./components/QuizScreen";
 import FlashcardScreen from "./components/FlashcardScreen";
@@ -27,6 +28,7 @@ export default function CompExamProApp() {
   const [stats, setStats] = useState(DEFAULT_STATS);
   const [skippedAuth, setSkippedAuth] = useState(false);
   const [showPaywall, setShowPaywall] = useState(false);
+  const syncTimer = useRef(null);
 
   // Check if user previously skipped auth
   useEffect(() => {
@@ -41,23 +43,76 @@ export default function CompExamProApp() {
     const params = new URLSearchParams(window.location.search);
     if (params.get("upgraded") === "true") {
       window.history.replaceState({}, "", window.location.pathname);
-      // The SubscriptionContext will pick up the new subscription on focus/load
     }
   }, []);
 
-  // Load stats from localStorage
+  // Load stats: try Supabase first for logged-in users, fall back to localStorage
   useEffect(() => {
-    try {
-      const saved = localStorage.getItem(STORAGE_KEY);
-      if (saved) setStats(JSON.parse(saved));
-    } catch {}
-  }, []);
+    const loadStats = async () => {
+      // Always load localStorage first as baseline
+      try {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) setStats(JSON.parse(saved));
+      } catch {}
 
-  // Save stats
+      // If logged in, try to load from Supabase (cloud takes priority)
+      if (user && supabase) {
+        try {
+          const { data, error } = await supabase
+            .from("user_progress")
+            .select("*")
+            .eq("user_id", user.id)
+            .maybeSingle();
+
+          if (!error && data) {
+            const cloudStats = {
+              correct: data.correct || 0,
+              total: data.total || 0,
+              streak: data.streak || 0,
+              bestStreak: data.best_streak || 0,
+              points: data.points || 0,
+              domainStats: data.domain_stats || {},
+              userName: "Student",
+            };
+            // Use whichever has more progress
+            setStats(prev => {
+              const use = cloudStats.total >= prev.total ? cloudStats : prev;
+              try { localStorage.setItem(STORAGE_KEY, JSON.stringify(use)); } catch {}
+              return use;
+            });
+          }
+        } catch {}
+      }
+    };
+    loadStats();
+  }, [user]);
+
+  // Sync stats to Supabase (debounced)
+  const syncToSupabase = useCallback((s) => {
+    if (!user || !supabase) return;
+    clearTimeout(syncTimer.current);
+    syncTimer.current = setTimeout(async () => {
+      try {
+        await supabase.from("user_progress").upsert({
+          user_id: user.id,
+          correct: s.correct,
+          total: s.total,
+          streak: s.streak,
+          best_streak: s.bestStreak,
+          points: s.points,
+          domain_stats: s.domainStats,
+          updated_at: new Date().toISOString(),
+        }, { onConflict: "user_id" });
+      } catch {}
+    }, 1000);
+  }, [user]);
+
+  // Save stats to localStorage + Supabase
   const saveStats = useCallback((s) => {
     setStats(s);
     try { localStorage.setItem(STORAGE_KEY, JSON.stringify(s)); } catch {}
-  }, []);
+    syncToSupabase(s);
+  }, [syncToSupabase]);
 
   // ── Navigation handlers ──
 
@@ -94,6 +149,14 @@ export default function CompExamProApp() {
   const handleReset = () => {
     const fresh = { ...DEFAULT_STATS, userName: stats.userName };
     saveStats(fresh);
+    // Also reset in Supabase immediately
+    if (user && supabase) {
+      supabase.from("user_progress").upsert({
+        user_id: user.id, correct: 0, total: 0, streak: 0,
+        best_streak: 0, points: 0, domain_stats: {},
+        updated_at: new Date().toISOString(),
+      }, { onConflict: "user_id" }).catch(() => {});
+    }
   };
 
   const handleSkipAuth = () => {
