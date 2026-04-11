@@ -101,8 +101,8 @@ export const QUESTIONS = [
     "options": [
       "A) Research data only",
       "B) Protected health information (PHI)",
-      "C) Counselor liability",
-      "D) Counselor income"
+      "C) Educational records, similar to health information",
+      "D) Treatment provider financial records"
     ],
     "correct": 1,
     "explanation": "HIPAA (Health Insurance Portability and Accountability Act) protects protected health information (PHI), establishing national standards for the privacy and security of individually identifiable health information."
@@ -111,7 +111,7 @@ export const QUESTIONS = [
     "domain": "Professional Orientation & Ethics",
     "question": "Privileged communication differs from confidentiality in that it:",
     "options": [
-      "A) Applies only to group counseling",
+      "A) Applies to all communications regardless of the client's wish to protect them",
       "B) Is broader in scope",
       "C) Is determined by the counselor",
       "D) Is a legal concept that protects clients in court proceedings"
@@ -159,7 +159,7 @@ export const QUESTIONS = [
     "domain": "Social & Cultural Diversity",
     "question": "An 'etic' worldview focuses on:",
     "options": [
-      "A) Similarities across humanity — a universalism perspective",
+      "A) Universal commonalities across all humans and cultures",
       "B) Cultural differences between groups",
       "C) The client's family of origin",
       "D) An insider's perspective of culture"
@@ -183,7 +183,7 @@ export const QUESTIONS = [
     "domain": "Social & Cultural Diversity",
     "question": "Acculturation refers to:",
     "options": [
-      "A) Adopting values, beliefs, and customs of the dominant culture while retaining some original identity",
+      "A) Incorporating dominant culture elements while maintaining original cultural identity and values",
       "B) Returning to one's culture of origin",
       "C) Rejecting the dominant culture entirely",
       "D) Complete absorption into the dominant group"
@@ -195,10 +195,10 @@ export const QUESTIONS = [
     "domain": "Social & Cultural Diversity",
     "question": "Assimilation differs from acculturation in that:",
     "options": [
-      "A) Assimilation preserves the original culture",
+      "A) Assimilation preserves elements of the original culture while incorporating new elements",
       "B) Assimilation only occurs in children",
       "C) Assimilation is a slower process",
-      "D) The individual is absorbed into the dominant group, losing original values"
+      "D) The individual is completely absorbed into the dominant group, losing original cultural values"
     ],
     "correct": 3,
     "explanation": "Assimilation occurs when an individual or racial/ethnic minority is absorbed into the dominant group, losing their own original values or behaviors. This is more complete than acculturation, which allows for retaining some original cultural identity."
@@ -231,10 +231,10 @@ export const QUESTIONS = [
     "domain": "Social & Cultural Diversity",
     "question": "White privilege refers to:",
     "options": [
-      "A) Educational advantages only",
-      "B) Advantages and entitlements that white people experience usually without awareness",
-      "C) Earned advantages based on merit",
-      "D) Financial advantages only"
+      "A) Advantages that come only from direct discrimination",
+      "B) Unearned advantages and entitlements based on race, often operating without awareness",
+      "C) Earned advantages based on individual merit",
+      "D) A concept used only in academic settings"
     ],
     "correct": 1,
     "explanation": "White privilege refers to advantages and entitlements that white people experience, usually without awareness. Such individuals are raised with the perception that their lives are normative, average, and ideal."
@@ -267,10 +267,10 @@ export const QUESTIONS = [
     "domain": "Social & Cultural Diversity",
     "question": "Proxemics is the study of:",
     "options": [
-      "A) Cultural food traditions",
-      "B) Proximity as it relates to personal space, interpersonal distance, and territoriality",
-      "C) Nonverbal facial expressions",
-      "D) Language differences across cultures"
+      "A) The study of eye contact and gaze patterns",
+      "B) The study of how people use space: personal space, interpersonal distance, and territoriality",
+      "C) The study of body posture and movement",
+      "D) The study of language differences and dialects across cultures"
     ],
     "correct": 1,
     "explanation": "Proxemics is the study of proximity as it relates to personal space, interpersonal distance, and territoriality. The related concept of propinquity is the tendency for people who are in close proximity to be attracted to one another."
@@ -303,10 +303,10 @@ export const QUESTIONS = [
     "domain": "Social & Cultural Diversity",
     "question": "Ethnocentrism is the belief that:",
     "options": [
-      "A) Minority views should be prioritized",
-      "B) All cultures are equally valid",
-      "C) One's own group is the center of everything and sets the standard",
-      "D) Cultural differences should be celebrated"
+      "A) Understanding the worldview of people from other cultures",
+      "B) Believing that cultural adaptation is less important than individual choice",
+      "C) The belief that one's own group is the center of everything and sets the standard",
+      "D) The appreciation and celebration of cultural diversity"
     ],
     "correct": 2,
     "explanation": "Ethnocentrism is the belief that one's own group is the center of everything and that it sets the standard. This can cause intergenerational conflict when younger members begin to adopt attitudes and behaviors of other cultures."
@@ -363,10 +363,10 @@ export const QUESTIONS = [
     "domain": "Human Growth & Development",
     "question": "Piaget's formal operational stage (11-15 years) is characterized by:",
     "options": [
-      "A) Object permanence",
-      "B) Conservation and reversibility",
+      "A) Object permanence and sensorimotor exploration behaviors",
+      "B) Conservation, reversibility, and logical classification abilities",
       "C) Abstract thinking, hypothesis testing, and logical problem solving",
-      "D) Egocentric thinking and centration"
+      "D) Egocentric thinking, centration, and lack of cognitive reversibility"
     ],
     "correct": 2,
     "explanation": "The formal operational stage involves moving toward abstract thinking, testing hypotheses, logical problem solving, and deduction. Piaget noted that children learn best from their own actions, not lectures."
@@ -377,7 +377,7 @@ export const QUESTIONS = [
     "options": [
       "A) Punishment/obedience and instrumental hedonism",
       "B) Good boy/nice girl and law and order",
-      "C) Concrete operations and formal operations",
+      "C) Self-interest and maintaining relationships with others",
       "D) Social contracts and universal ethical principles"
     ],
     "correct": 3,
@@ -399,9 +399,9 @@ export const QUESTIONS = [
     "domain": "Human Growth & Development",
     "question": "Vygotsky's Zone of Proximal Development (ZPD) is:",
     "options": [
-      "A) The physical space where learning occurs",
-      "B) A stage of cognitive development",
-      "C) The distance between home and school",
+      "A) The specific physical space where learning occurs in classrooms",
+      "B) A distinct developmental stage similar to Piaget's concrete operations",
+      "C) The physical distance between the home and school environments",
       "D) The difference between what a child can do alone vs. with help from an adult"
     ],
     "correct": 3,
@@ -459,10 +459,10 @@ export const QUESTIONS = [
     "domain": "Human Growth & Development",
     "question": "Harlow's monkey studies demonstrated that:",
     "options": [
-      "A) Attachment develops only after age 1",
-      "B) Monkeys have no attachment needs",
-      "C) Attachment is innate; monkeys preferred cloth mothers over wire mothers with food",
-      "D) Attachment is learned through feeding"
+      "A) Attachment develops only after the child reaches age one",
+      "B) Monkeys and primates have no attachment or bonding needs whatsoever",
+      "C) Attachment is innate; monkeys preferred cloth mothers to wire mothers with food",
+      "D) Attachment to caregivers develops only through feeding and nutrition provision"
     ],
     "correct": 2,
     "explanation": "Harlow's studies showed that attachment is an innate tendency, not learned. Monkeys preferred the terry cloth mother over the wire mother who dispensed milk, demonstrating that contact comfort, not feeding, is primary."
@@ -483,10 +483,10 @@ export const QUESTIONS = [
     "domain": "Human Growth & Development",
     "question": "Carol Gilligan criticized Kohlberg's theory because:",
     "options": [
-      "A) It had too many stages",
-      "B) It was not based on research",
+      "A) Kohlberg's moral development theory had too many stages",
+      "B) His theoretical model was not adequately based on empirical research data",
       "C) It did not account for women's emphasis on caregiving and personal responsibility",
-      "D) It focused too much on emotions"
+      "D) The theory focused too heavily on emotions rather than moral reasoning"
     ],
     "correct": 2,
     "explanation": "Gilligan was critical of Kohlberg because his model did not account for the notion that women place more emphasis on caregiving and personal responsibility than men, who focus on individual rights and justice. Women score lower on Kohlberg's test as a result."
@@ -543,9 +543,9 @@ export const QUESTIONS = [
     "domain": "Human Growth & Development",
     "question": "Robert Kegan's theory focuses on:",
     "options": [
-      "A) Group dynamics",
-      "B) Psychosexual stages",
-      "C) Career development stages",
+      "A) The dynamics and processes of group development and team interactions",
+      "B) The progression through psychosexual stages of human development",
+      "C) The distinct stages of career development and occupational choice",
       "D) Adult cognitive development and how people construct their own reality"
     ],
     "correct": 3,
@@ -603,9 +603,9 @@ export const QUESTIONS = [
     "domain": "Career Development",
     "question": "Holland's concept of 'differentiation' refers to:",
     "options": [
-      "A) Adjacent types being psychologically similar",
-      "B) Matching person to environment",
-      "C) Having a clear vocational identity",
+      "A) The degree to which adjacent personality types are psychologically similar",
+      "B) The process of matching person traits with appropriate environmental factors",
+      "C) Having a clear and consistent vocational identity with stable preferences",
       "D) An individual's profile having significant highs and lows across the six types"
     ],
     "correct": 3,
@@ -687,10 +687,10 @@ export const QUESTIONS = [
     "domain": "Career Development",
     "question": "The trait-factor approach to career counseling involves:",
     "options": [
-      "A) Narrative career construction",
-      "B) Studying the individual (traits), surveying occupations (factors), and matching them",
-      "C) Building self-efficacy",
-      "D) Studying unconscious motivations"
+      "A) Creating career narratives and stories through reflective dialogue with counselor",
+      "B) Studying traits, surveying occupations, and matching person to occupation",
+      "C) Building client self-efficacy and career decision-making confidence progressively",
+      "D) Exploring unconscious motivations through psychoanalytic interview and analysis"
     ],
     "correct": 1,
     "explanation": "Developed by Frank Parsons, the trait-factor approach involves studying the individual's traits, surveying occupations and their factors, and matching the person with an occupation using 'true reasoning.' It stimulated development of assessment techniques."
@@ -1563,10 +1563,10 @@ export const QUESTIONS = [
     "domain": "Social & Cultural Diversity",
     "question": "Cultural relativity means:",
     "options": [
-      "A) Only Western values are valid",
-      "B) All behaviors are universally acceptable",
+      "A) A culture's values are superior to all others",
+      "B) All behaviors are universally acceptable without any contextual judgment",
       "C) A behavior cannot be assessed as good or bad except within its cultural context",
-      "D) Culture has no impact on behavior"
+      "D) Cultural practices from the past should never be questioned"
     ],
     "correct": 2,
     "explanation": "Cultural relativity holds that a behavior cannot be assessed as good or bad except within the context of a given culture."
@@ -1587,10 +1587,10 @@ export const QUESTIONS = [
     "domain": "Social & Cultural Diversity",
     "question": "Disproportionality in schools refers to:",
     "options": [
-      "A) Treating some students differently by disproportionate referrals to special ed or discipline",
-      "B) Equal treatment of all students",
-      "C) Having too many students per class",
-      "D) Unequal funding between schools"
+      "A) Treating students differently through disproportionate referrals to special ed or discipline",
+      "B) Having unequal numbers of students in different grade levels",
+      "C) Having too many students per classroom",
+      "D) Using different textbooks for different groups of students"
     ],
     "correct": 0,
     "explanation": "Disproportionality is treating some school-age children differently, resulting in unneeded services, less rigorous curricula, and more disciplinary consequences."
@@ -1599,10 +1599,10 @@ export const QUESTIONS = [
     "domain": "Social & Cultural Diversity",
     "question": "Paralanguage includes:",
     "options": [
-      "A) Vocal cues like loudness, pauses, rate of speech, and inflection",
-      "B) Body language only",
-      "C) Sign language",
-      "D) Written communication only"
+      "A) Vocal cues like loudness, pauses, rate of speech, pitch, and inflection",
+      "B) The ability to speak multiple languages",
+      "C) Body language and facial expressions",
+      "D) Only written forms of communication"
     ],
     "correct": 0,
     "explanation": "Paralanguage refers to vocal cues including loudness, pauses, silences, hesitations, rate of speech, and inflection."
@@ -1611,10 +1611,10 @@ export const QUESTIONS = [
     "domain": "Social & Cultural Diversity",
     "question": "ADA (1990) prohibits:",
     "options": [
-      "A) All testing",
-      "B) Discrimination against the disabled by employers of 15+ workers",
-      "C) Age discrimination only",
-      "D) Immigration restrictions"
+      "A) Discrimination in housing based on disability status",
+      "B) Discrimination against people with disabilities by employers with 15 or more employees",
+      "C) Discrimination in public accommodations, employment, education, and transportation",
+      "D) Restrictions on immigration based on medical conditions"
     ],
     "correct": 1,
     "explanation": "The ADA prohibits employers of 15+ workers from discriminating against the disabled, and prohibits discrimination in transportation and access to public facilities."
@@ -1623,10 +1623,10 @@ export const QUESTIONS = [
     "domain": "Social & Cultural Diversity",
     "question": "IDEA (2004) requires:",
     "options": [
-      "A) Standardized testing for all",
-      "B) Universal preschool",
-      "C) Free appropriate public education for children ages 3-21 with disabilities",
-      "D) Private school vouchers"
+      "A) Standardized testing for all students",
+      "B) Early intervention services for children under age 3 only",
+      "C) Free appropriate public education for children with disabilities ages 3-21",
+      "D) Parental consent for all school discipline matters"
     ],
     "correct": 2,
     "explanation": "IDEA requires free, appropriate public education for all children ages 3-21 with qualifying disabilities, in the least restrictive environment with an IEP."
@@ -1767,10 +1767,10 @@ export const QUESTIONS = [
     "domain": "Career Development",
     "question": "The glass ceiling refers to:",
     "options": [
-      "A) Salary caps",
-      "B) The highest office floor",
-      "C) Invisible restraints limiting advancement up the career ladder",
-      "D) A physical barrier"
+      "A) Salary caps or maximum income ceilings for certain professional positions",
+      "B) The highest office or executive floor in a corporate building structure",
+      "C) Invisible restraints limiting advancement up the career ladder in organizations",
+      "D) A literal physical barrier or partition in the workplace environment"
     ],
     "correct": 2,
     "explanation": "The glass ceiling is a set of invisible restraints typically imposed to limit ability to move up the career ladder."
@@ -3136,9 +3136,9 @@ export const QUESTIONS = [
     "question": "According to Cross's model of cultural identity development, individuals progress through which stages?",
     "options": [
       "A) Pre-encounter, encounter, immersion-emersion, internalization, and internalization-commitment",
-      "B) Awareness, knowledge, skill, and mastery",
+      "B) Awareness, action, integration, and advocacy",
       "C) Beginning, intermediate, advanced, and expert",
-      "D) Exposure, learning, application, and mastery"
+      "D) Ignorance, recognition, understanding, and mastery"
     ],
     "correct": 0,
     "explanation": "Cross's Nigrescence model describes Black racial identity development through five stages: pre-encounter (low cultural awareness), encounter (experiences prompting awareness), immersion-emersion (high cultural immersion), internalization, and internalization-commitment (integrating identity into broader self)."
@@ -3171,10 +3171,10 @@ export const QUESTIONS = [
     "domain": "Social & Cultural Diversity",
     "question": "According to the R/CID model, the 'conformity' stage is characterized by which beliefs?",
     "options": [
-      "A) Complete rejection of the dominant culture",
-      "B) Preference for the dominant culture and devaluation of one's own culture",
-      "C) Integration of multiple cultural perspectives",
-      "D) Exclusive focus on one's ethnic heritage"
+      "A) Ambivalence and confusion about one's racial or ethnic identity",
+      "B) Preference for the dominant culture and devaluation of one's own cultural heritage",
+      "C) Integration of multiple cultural perspectives and worldviews",
+      "D) Advocacy for social justice and systemic cultural change"
     ],
     "correct": 1,
     "explanation": "In the conformity stage, individuals often prefer the dominant culture's values and aesthetics while devaluing their own culture. This stage may involve internal conflict and self-devaluation."
@@ -3219,10 +3219,10 @@ export const QUESTIONS = [
     "domain": "Social & Cultural Diversity",
     "question": "D'Andrea and Daniels developed the RESPECTFUL model to enhance counselor competence with which populations?",
     "options": [
-      "A) Only racial minority clients",
-      "B) Only clients with disabilities",
-      "C) All clients from diverse backgrounds across multiple dimensions",
-      "D) Only immigrant populations"
+      "A) Only clients from Western European backgrounds",
+      "B) Only clients with disabilities and physical limitations",
+      "C) All clients from diverse backgrounds across multiple dimensions of identity",
+      "D) Only clients experiencing mental health crises"
     ],
     "correct": 2,
     "explanation": "The RESPECTFUL model addresses multiple dimensions of diversity: Religion/Spirituality, Economic status, Sexual orientation, Psychological maturity, Ethnicity/Race, Chronological age, Trauma, Family history, Unique ability, and Location."
@@ -3231,10 +3231,10 @@ export const QUESTIONS = [
     "domain": "Social & Cultural Diversity",
     "question": "The distinction between emic and etic perspectives in cultural understanding refers to which aspect?",
     "options": [
-      "A) Economic versus academic viewpoints",
+      "A) Theoretical versus practical approaches to cultural assessment",
       "B) Insider (cultural member) versus outsider (external observer) perspectives",
-      "C) Emotional versus rational perspectives",
-      "D) Early versus contemporary cultural traditions"
+      "C) Modern versus traditional cultural understanding",
+      "D) Early historical versus contemporary cultural traditions and practices"
     ],
     "correct": 1,
     "explanation": "Emic perspective is the insider's view—how cultural members understand their own culture. Etic perspective is the outsider's observational view. Counselors need both for cultural understanding."
@@ -3245,8 +3245,8 @@ export const QUESTIONS = [
     "options": [
       "A) Acceptance and rejection only",
       "B) Integration, assimilation, separation, and marginalization",
-      "C) Tradition and modernity",
-      "D) Individual and collectivist"
+      "C) Conformity and resistance",
+      "D) Approach and avoidance behaviors"
     ],
     "correct": 1,
     "explanation": "Berry's framework describes how individuals relate to their heritage culture and the dominant culture: integration (maintaining both), assimilation (adopting dominant only), separation (maintaining heritage only), and marginalization (identifying with neither)."
@@ -3267,10 +3267,10 @@ export const QUESTIONS = [
     "domain": "Social & Cultural Diversity",
     "question": "Cultural encapsulation, as described by Wrenn, refers to counselors being trapped within which limitations?",
     "options": [
-      "A) Physical therapy models",
-      "B) Their own cultural frameworks, unable to see outside their worldview",
-      "C) Diagnostic categories",
-      "D) Insurance reimbursement limitations"
+      "A) Inability to understand modern technology in counseling",
+      "B) Being trapped within one's own cultural frameworks and unable to see beyond them",
+      "C) Lack of proper licensing and credentialing",
+      "D) Insurance reimbursement limitations and financial barriers"
     ],
     "correct": 1,
     "explanation": "Cultural encapsulation describes counselors bounded by their own cultural perspectives, unable to recognize or value different worldviews. This limits their effectiveness with culturally diverse clients."
@@ -3279,10 +3279,10 @@ export const QUESTIONS = [
     "domain": "Social & Cultural Diversity",
     "question": "The concept of 'worldview' in multicultural counseling addresses which aspect of cultural understanding?",
     "options": [
-      "A) Only how people view geography",
-      "B) Individual views of religion only",
+      "A) A person's religious beliefs and practices",
+      "B) Individual views and personal attitudes about religion and spirituality",
       "C) The broader frameworks through which people perceive reality, including individualism-collectivism",
-      "D) Political ideologies exclusively"
+      "D) Personal career aspirations and professional goals"
     ],
     "correct": 2,
     "explanation": "Worldview encompasses how cultures perceive reality, relating to individualism vs. collectivism, time orientation, control over environment, and human relationships. Understanding clients' worldviews is essential for counseling."
@@ -3303,10 +3303,10 @@ export const QUESTIONS = [
     "domain": "Social & Cultural Diversity",
     "question": "Power, privilege, and oppression in counseling most directly relate to which systemic issue?",
     "options": [
-      "A) Individual psychopathology",
+      "A) Individual trauma histories and family dysfunction",
       "B) Unequal access to resources and opportunities based on group membership",
-      "C) Personal motivation and effort",
-      "D) Educational background alone"
+      "C) Personal motivation and effort levels",
+      "D) Geographic location and climate variations"
     ],
     "correct": 1,
     "explanation": "These concepts address systemic inequalities where dominant groups have advantages while marginalized groups face barriers. Counselors must understand these structures to practice equitably."
@@ -3327,10 +3327,10 @@ export const QUESTIONS = [
     "domain": "Social & Cultural Diversity",
     "question": "When counseling someone experiencing microaggressions, which is the counselor's appropriate focus?",
     "options": [
-      "A) Minimizing the impact as 'unintentional'",
-      "B) Defending the perpetrator's intent",
+      "A) Minimizing their impact as \"unintentional\" slights",
+      "B) Challenging the person who committed the microaggression immediately",
       "C) Validating the client's experience and exploring the cumulative impact",
-      "D) Assuming the client is oversensitive"
+      "D) Focusing only on the perpetrator's intentions"
     ],
     "correct": 2,
     "explanation": "Counselors should validate that microaggressions, regardless of intent, are real and harmful. The cumulative impact of these slights contributes to stress and mental health concerns."
@@ -3339,10 +3339,10 @@ export const QUESTIONS = [
     "domain": "Social & Cultural Diversity",
     "question": "Social class and socioeconomic status (SES) in counseling affect which outcomes?",
     "options": [
-      "A) Only determining whether someone deserves treatment",
-      "B) Access to mental health services, therapeutic relationships, and counseling outcomes",
-      "C) Nothing; counseling is equally accessible to everyone",
-      "D) Only the type of diagnosis"
+      "A) Client satisfaction only",
+      "B) Access to mental health services, therapeutic relationships, counseling outcomes, and treatment completion",
+      "C) Nothing; counseling is equally accessible and effective for everyone",
+      "D) Only the duration of treatment"
     ],
     "correct": 1,
     "explanation": "SES significantly affects access to care, ability to afford counseling, time availability, and even therapeutic matching. Counselors must recognize SES-based barriers and advocate for equitable access."
@@ -3363,10 +3363,10 @@ export const QUESTIONS = [
     "domain": "Social & Cultural Diversity",
     "question": "In counseling, gender identity differs from biological sex in that it refers to which aspect?",
     "options": [
-      "A) Reproductive capacity",
-      "B) Chromosomal makeup",
+      "A) Gender identity is permanent; biological sex can change",
+      "B) Biological sex is assigned at birth while gender identity develops over time",
       "C) One's internal sense of gender, which may differ from sex assigned at birth",
-      "D) Only legal identification"
+      "D) Only legal identification documents"
     ],
     "correct": 2,
     "explanation": "Gender identity is the internal, personal sense of one's gender. It may align with or differ from sex assigned at birth. Counselors must respect clients' gender identity regardless of biological factors."
@@ -3387,9 +3387,9 @@ export const QUESTIONS = [
     "domain": "Social & Cultural Diversity",
     "question": "Regarding LGBTQ+ issues in counseling, which is a significant mental health concern related to minority stress?",
     "options": [
-      "A) Sexual orientation and gender identity themselves cause mental illness",
-      "B) Discrimination, internalized stigma, victimization, and lack of social support contribute to higher rates of certain mental health concerns",
-      "C) LGBTQ+ individuals are inherently less mentally healthy",
+      "A) Lack of employment opportunities only",
+      "B) Discrimination, internalized stigma, victimization, and lack of social support contribute to mental health concerns",
+      "C) Financial difficulties and poverty",
       "D) Mental health counseling should attempt to change sexual orientation or gender identity"
     ],
     "correct": 1,
@@ -3399,10 +3399,10 @@ export const QUESTIONS = [
     "domain": "Social & Cultural Diversity",
     "question": "Conversion therapy or 'reparative therapy' is considered unethical because it:",
     "options": [
-      "A) Doesn't involve enough sessions",
-      "B) Is ineffective at changing orientation/identity, causes harm, and violates the person's right to self-determination",
-      "C) Is not approved by insurance companies",
-      "D) Isn't based on psychodynamic theory"
+      "A) It is too expensive for clients",
+      "B) It is ineffective, causes harm, and violates the person's right to self-determination",
+      "C) It is not approved by insurance companies",
+      "D) It has not been studied sufficiently by researchers"
     ],
     "correct": 1,
     "explanation": "Major professional organizations (APA, ACA, AMA) oppose conversion therapy as harmful and ineffective. It violates autonomy, causes psychological damage, and is based on the false premise that LGBTQ+ identity is pathological."
@@ -3411,10 +3411,10 @@ export const QUESTIONS = [
     "domain": "Social & Cultural Diversity",
     "question": "Disability culture and the social model of disability address which understanding?",
     "options": [
-      "A) Disabilities are primarily individual medical problems",
+      "A) Disabilities are purely medical conditions with no social component",
       "B) Disabilities result only from physical or cognitive differences",
-      "C) Disability is partly created by societal barriers and lack of accommodations, not just individual limitations",
-      "D) People with disabilities should hide their disabilities"
+      "C) Disability is partly created by societal barriers, lack of accommodations, and environmental factors",
+      "D) All disabilities are visible and obvious"
     ],
     "correct": 2,
     "explanation": "The social model views disability as partly created by societal barriers, accessibility gaps, and discrimination. This contrasts with the medical model that locates disability entirely within the individual."
@@ -3426,7 +3426,7 @@ export const QUESTIONS = [
       "A) Discrimination against people based on physical ability",
       "B) Assumptions that disability is inherently negative or less valuable",
       "C) Both discrimination and assumptions that privilege able-bodied people",
-      "D) Only jokes about disabilities"
+      "D) Assumptions that disabled people need fixing or are less capable"
     ],
     "correct": 2,
     "explanation": "Ableism is discrimination and prejudice against people with disabilities, including assumptions that able-bodied status is superior. Counselors must examine their own ableist biases and provide accessible services."
@@ -3436,9 +3436,9 @@ export const QUESTIONS = [
     "question": "When counseling someone with a disability, which approach is most appropriate?",
     "options": [
       "A) Assuming disability is the primary issue in all counseling concerns",
-      "B) Completely ignoring the disability",
-      "C) Understanding the disability and its impact while also viewing the person as a complete individual with strengths",
-      "D) Recommending they focus exclusively on disability-related issues"
+      "B) Requiring accommodations but treating the disability as shameful",
+      "C) Understanding the disability and its impact while viewing the person as a complete individual with strengths",
+      "D) Ignoring the disability completely and treating all clients the same"
     ],
     "correct": 2,
     "explanation": "Effective counseling with disabled clients involves acknowledging disability when relevant while recognizing the whole person. Not every concern stems from disability; counselors should ask rather than assume."
@@ -3447,10 +3447,10 @@ export const QUESTIONS = [
     "domain": "Social & Cultural Diversity",
     "question": "Immigration and acculturation stress can contribute to which mental health concerns?",
     "options": [
-      "A) Nothing—immigrants always adjust well",
-      "B) Only grief and homesickness",
-      "C) Anxiety, depression, and identity challenges related to cultural adjustment and loss",
-      "D) Only economic stress"
+      "A) Nothing—immigrants always adjust well and experience no mental health effects",
+      "B) Only language barriers and communication problems",
+      "C) Anxiety, depression, and identity challenges related to cultural adjustment, loss, and displacement",
+      "D) Improved mental health from new opportunities"
     ],
     "correct": 2,
     "explanation": "Immigrants often experience significant stress: language barriers, discrimination, loss of cultural context, family separation, economic challenges, and identity questions. These contribute to anxiety, depression, and adjustment difficulties."
@@ -3461,8 +3461,8 @@ export const QUESTIONS = [
     "options": [
       "A) The language spoken before immigration",
       "B) Trust in authority figures, which may be affected by past trauma or persecution",
-      "C) The client's favorite foods",
-      "D) The immigration date"
+      "C) The client's educational background",
+      "D) The client's economic status and income level"
     ],
     "correct": 1,
     "explanation": "Immigrants and refugees may have trauma histories involving government persecution, violence, or displacement. These experiences affect trust in authority—including counselors—requiring cultural humility and transparency."
@@ -3471,9 +3471,9 @@ export const QUESTIONS = [
     "domain": "Social & Cultural Diversity",
     "question": "Refugee trauma differs from typical trauma counseling needs in which way?",
     "options": [
-      "A) It's less serious than other trauma",
-      "B) It typically involves persecution, violence, and displacement before resettlement",
-      "C) It doesn't require specialized counseling",
+      "A) Refugee trauma is less severe than other trauma types",
+      "B) It typically involves persecution, violence, displacement, and resettlement",
+      "C) It only affects adult refugees and not children",
       "D) Only military personnel experience refugee trauma"
     ],
     "correct": 1,
@@ -3483,10 +3483,10 @@ export const QUESTIONS = [
     "domain": "Social & Cultural Diversity",
     "question": "When counseling Indigenous or Native American clients, which historical context is essential to understand?",
     "options": [
-      "A) Only contemporary tribal politics",
-      "B) Only modern tribal governance",
+      "A) Only contemporary tribal politics and governance",
+      "B) The impact of early European contact and trade routes",
       "C) Intergenerational trauma from colonization, forced assimilation, and ongoing systemic inequities",
-      "D) Only language differences"
+      "D) Only the history of treaties and land disputes"
     ],
     "correct": 2,
     "explanation": "Understanding Native American/Indigenous mental health requires knowledge of historical trauma (colonization, forced removal, boarding schools), ongoing discrimination, and current health disparities. This context shapes clients' experiences."
@@ -3495,10 +3495,10 @@ export const QUESTIONS = [
     "domain": "Social & Cultural Diversity",
     "question": "The concept of 'historical trauma' in Indigenous communities refers to which phenomenon?",
     "options": [
-      "A) Trauma from historical events that ended long ago",
-      "B) Intergenerational psychological wounds from collective experiences of colonization and oppression",
-      "C) Only traumatic events specific to one person",
-      "D) Something that doesn't affect current generations"
+      "A) Trauma from historical events that ended long ago with no current effects",
+      "B) Intergenerational psychological wounds from collective colonization and oppression",
+      "C) Only trauma experienced by Indigenous elders",
+      "D) Trauma that only affects traditional cultural practices"
     ],
     "correct": 1,
     "explanation": "Historical trauma describes how collective experiences of genocide, displacement, and assimilation policies create intergenerational psychological effects in Indigenous communities, affecting mental health across generations."
@@ -3507,9 +3507,9 @@ export const QUESTIONS = [
     "domain": "Social & Cultural Diversity",
     "question": "Racial and ethnic identity development includes understanding which relationship?",
     "options": [
-      "A) Only financial status",
-      "B) How individuals incorporate their racial/ethnic heritage into their sense of self",
-      "C) Only occupational choices",
+      "A) Race and ethnicity are determined solely by genetics",
+      "B) How individuals incorporate their racial or ethnic heritage into their sense of self",
+      "C) The language spoken in a person's household",
       "D) Language spoken exclusively"
     ],
     "correct": 1,
@@ -3519,10 +3519,10 @@ export const QUESTIONS = [
     "domain": "Social & Cultural Diversity",
     "question": "The concept of 'locus of control' (Rotter) refers to which belief?",
     "options": [
-      "A) Where people geographically live",
+      "A) How people manage their emotional reactions to stress",
       "B) Whether individuals believe they control outcomes (internal) or outcomes are controlled by external forces",
-      "C) How people control their emotions",
-      "D) Only political beliefs"
+      "C) How people control their emotions and regulate their mood",
+      "D) The degree to which someone feels responsible for others"
     ],
     "correct": 1,
     "explanation": "Locus of control describes whether individuals attribute outcomes to internal factors (personal effort) or external factors (chance, powerful others). Cultural differences exist; some cultures emphasize external locus."
@@ -3531,10 +3531,10 @@ export const QUESTIONS = [
     "domain": "Social & Cultural Diversity",
     "question": "The concept of 'locus of responsibility' differs from locus of control in that it addresses which consideration?",
     "options": [
-      "A) Only money management",
-      "B) Whether individuals blame themselves or their circumstances for problems",
-      "C) Only academic performance",
-      "D) Only family relationships"
+      "A) How responsible someone is for others' actions",
+      "B) Whether individuals blame themselves or circumstances for problems",
+      "C) Only academic performance and test scores",
+      "D) The legal responsibility one has for family members"
     ],
     "correct": 1,
     "explanation": "Locus of responsibility addresses attribution—whether individuals blame themselves personally for problems or recognize external circumstances and systemic factors. This affects self-blame and shame."
@@ -3543,10 +3543,10 @@ export const QUESTIONS = [
     "domain": "Social & Cultural Diversity",
     "question": "Proxemics—the study of how people use space—reveals which cultural difference?",
     "options": [
-      "A) How people feel about furniture",
+      "A) Only differences in physical architecture and building design",
       "B) Variations in comfortable interpersonal distance and spatial arrangements across cultures",
-      "C) How climates differ geographically",
-      "D) Personal preferences for room colors"
+      "C) How people use time in different societies",
+      "D) Personal preferences for room colors and decoration styles"
     ],
     "correct": 1,
     "explanation": "Proxemics shows that comfortable interpersonal distance varies culturally. Some cultures prefer closer proximity; others maintain greater distance. Mismatches can create discomfort."
@@ -3567,10 +3567,10 @@ export const QUESTIONS = [
     "domain": "Social & Cultural Diversity",
     "question": "Paralinguistics in communication includes which elements?",
     "options": [
-      "A) Only the words spoken",
+      "A) Body language and hand gestures exclusively",
       "B) Voice tone, volume, pace, pitch, and other vocal qualities beyond words",
-      "C) Only body language",
-      "D) Only written communication"
+      "C) Facial expressions and eye contact only",
+      "D) Only written communication and email"
     ],
     "correct": 1,
     "explanation": "Paralinguistics encompasses vocal qualities—tone, volume, rate, pitch, emphasis—that communicate meaning beyond words. Cultural differences exist in acceptable volume and pace."
@@ -3579,10 +3579,10 @@ export const QUESTIONS = [
     "domain": "Social & Cultural Diversity",
     "question": "High-context versus low-context cultures differ most fundamentally in which communication aspect?",
     "options": [
-      "A) Language families",
-      "B) Whether meaning derives from explicit words (low-context) or from context, relationship, and nonverbals (high-context)",
-      "C) Vocabulary size",
-      "D) Literacy rates"
+      "A) Language families and linguistic classifications",
+      "B) Whether meaning comes from explicit words (low-context) or from context, relationship, and nonverbals (high-context)",
+      "C) The pace of communication—fast versus slow speakers",
+      "D) Geographic location and time zones"
     ],
     "correct": 1,
     "explanation": "High-context cultures (many Asian, African, Latin American) rely on relationship, nonverbals, and context; low-context cultures (Northern European, North American) emphasize explicit verbal communication. This affects counselor-client communication."
@@ -3591,10 +3591,10 @@ export const QUESTIONS = [
     "domain": "Social & Cultural Diversity",
     "question": "When counseling a client from a high-context culture, what communication adaptation might be appropriate?",
     "options": [
-      "A) Use only direct, explicit statements",
+      "A) Minimize context and relationships",
       "B) Ignore context and focus only on words",
       "C) Attend to nonverbal communication, relationship building, and implied meanings",
-      "D) Assume low-context expectations"
+      "D) Use only direct, explicit verbal communication"
     ],
     "correct": 2,
     "explanation": "High-context clients may communicate indirectly and value relationship before discussing issues. Counselors should slow down, build rapport, attend to nonverbals, and avoid pushing for premature disclosure."
@@ -3603,10 +3603,10 @@ export const QUESTIONS = [
     "domain": "Social & Cultural Diversity",
     "question": "Spirituality and religion in counseling raise which ethical consideration?",
     "options": [
-      "A) Counselors should impose their own spiritual beliefs",
-      "B) Spirituality is irrelevant to mental health",
+      "A) Counselors should avoid discussing spiritual or religious topics",
+      "B) Counselors should persuade clients to adopt a secular worldview",
       "C) Counselors should explore clients' spiritual beliefs and values while respecting autonomy",
-      "D) Religious beliefs always indicate pathology"
+      "D) Counselors should impose their own spiritual beliefs and practices"
     ],
     "correct": 2,
     "explanation": "Spirituality and religion significantly affect worldview, coping, meaning-making, and mental health. Counselors should explore these with respect while avoiding imposition of their own beliefs."
@@ -3615,10 +3615,10 @@ export const QUESTIONS = [
     "domain": "Social & Cultural Diversity",
     "question": "When a counselor's spiritual beliefs conflict with a client's worldview, what is the ethical approach?",
     "options": [
-      "A) Convert the client to the counselor's beliefs",
-      "B) Dismiss the client's beliefs",
-      "C) Explore both perspectives, respect the client's autonomy, and refer if the conflict impairs treatment",
-      "D) Pretend the beliefs don't exist"
+      "A) Avoid discussing the conflict to prevent tension",
+      "B) Convert the client to the counselor's beliefs",
+      "C) Explore both perspectives, respect the client's autonomy, and refer if conflict impairs treatment",
+      "D) Assume the counselor's perspective is more valid"
     ],
     "correct": 2,
     "explanation": "Counselors should acknowledge belief differences, explore respectfully, and maintain clients' rights to their own beliefs. If conflicts significantly impair the relationship, referral is appropriate."
@@ -3627,10 +3627,10 @@ export const QUESTIONS = [
     "domain": "Social & Cultural Diversity",
     "question": "Aging and gerontological counseling addresses which population's specific needs?",
     "options": [
-      "A) Only people over 65",
+      "A) Young adults transitioning to adulthood",
       "B) Older adults facing life transitions, health changes, loss, and adjusted life roles",
-      "C) Only cognitive decline",
-      "D) Only people in nursing homes"
+      "C) Middle-aged clients experiencing career changes",
+      "D) Only people in nursing homes or residential care"
     ],
     "correct": 1,
     "explanation": "Gerontological counseling addresses older adults' unique challenges: retirement adjustment, health changes, loss of loved ones, reduced social roles, and existential concerns about mortality and legacy."
@@ -3639,10 +3639,10 @@ export const QUESTIONS = [
     "domain": "Social & Cultural Diversity",
     "question": "Ageism in counseling refers to which type of bias?",
     "options": [
-      "A) Studying how age affects development",
-      "B) Stereotyping and discriminating against people based on age, assuming decline or reduced capability",
-      "C) Celebrating birthdays",
-      "D) Age-appropriate education"
+      "A) Studying how age affects development and lifespan",
+      "B) Stereotyping and discriminating based on age, assuming decline or reduced capability",
+      "C) Recognizing that people age differently",
+      "D) Understanding older adults' contributions to society"
     ],
     "correct": 1,
     "explanation": "Ageism involves stereotypes that older adults are less capable, less attractive, or less worthy. It affects treatment quality, counselor assumptions, and medication recommendations. Counselors must examine ageist biases."
@@ -3651,10 +3651,10 @@ export const QUESTIONS = [
     "domain": "Social & Cultural Diversity",
     "question": "The D'Andrea and Daniels RESPECTFUL model includes 'Trauma' as a dimension addressing which consideration?",
     "options": [
-      "A) Only major catastrophic events",
-      "B) Current and historical traumatic experiences affecting clients' mental health",
-      "C) Only war-related trauma",
-      "D) Only childhood abuse"
+      "A) Only major catastrophic events like disasters",
+      "B) Current and historical traumatic experiences affecting clients' mental health and functioning",
+      "C) Only traumatic events that occurred in childhood",
+      "D) Trauma that affects only individual mental health, not relationships"
     ],
     "correct": 1,
     "explanation": "The RESPECTFUL model recognizes trauma as a diversity dimension—current and historical trauma affects clients' psychological functioning, worldview, trust, and counseling needs."
@@ -3663,10 +3663,10 @@ export const QUESTIONS = [
     "domain": "Social & Cultural Diversity",
     "question": "Strong's social influence model in counseling proposes that counselor effectiveness depends partly on which factors?",
     "options": [
-      "A) Only counselor credentials",
+      "A) The counselor's gender and physical appearance exclusively",
       "B) The counselor's perceived expertise, trustworthiness, and attractiveness to the client",
       "C) Only the counselor's theoretical orientation",
-      "D) Exclusively on client factors"
+      "D) The length of time spent in the counseling profession"
     ],
     "correct": 1,
     "explanation": "Strong's model indicates that clients are influenced by counselors perceived as expert (knowledgeable), trustworthy (reliable, honest), and attractive (personable, valued). These factors enhance therapeutic influence."
@@ -3675,10 +3675,10 @@ export const QUESTIONS = [
     "domain": "Social & Cultural Diversity",
     "question": "Cognitive dissonance (Festinger) occurs when individuals hold beliefs that:",
     "options": [
-      "A) Are too complex to understand",
-      "B) Contradict each other, creating psychological discomfort motivating change",
-      "C) Are entirely consistent",
-      "D) Are unimportant"
+      "A) A belief system that is too complex to understand",
+      "B) Contradictory beliefs that create psychological discomfort motivating change",
+      "C) Disagreement between two people about a topic",
+      "D) Fear of making the wrong decision"
     ],
     "correct": 1,
     "explanation": "Cognitive dissonance describes the discomfort from holding contradictory beliefs or values. This motivates individuals to reduce discomfort by changing beliefs, behaviors, or justifications."
@@ -3689,8 +3689,8 @@ export const QUESTIONS = [
     "options": [
       "A) Change nothing despite recognizing a problem",
       "B) Experience discomfort when their behavior contradicts their values, potentially motivating change",
-      "C) Immediately make perfect decisions",
-      "D) Always act rationally"
+      "C) Develop stronger contradictions in their beliefs",
+      "D) Avoid therapy and counseling entirely"
     ],
     "correct": 1,
     "explanation": "When clients recognize that their behaviors contradict their values, cognitive dissonance creates discomfort that can motivate change. Counselors can highlight these inconsistencies to facilitate growth."
@@ -3699,10 +3699,10 @@ export const QUESTIONS = [
     "domain": "Social & Cultural Diversity",
     "question": "Ethnocentrism in counseling refers to which problematic perspective?",
     "options": [
-      "A) Learning about other cultures",
+      "A) Learning about and appreciating other cultures",
       "B) Viewing one's own culture as superior and the standard against which to judge others",
-      "C) Celebrating diverse cultures",
-      "D) Only studying ethics"
+      "C) Recognizing diversity within cultures",
+      "D) Encouraging clients to explore multiple perspectives"
     ],
     "correct": 1,
     "explanation": "Ethnocentrism is viewing one's own culture as the norm and superior standard, judging other cultures by those standards. This limits cultural understanding and effective cross-cultural counseling."
@@ -3711,10 +3711,10 @@ export const QUESTIONS = [
     "domain": "Social & Cultural Diversity",
     "question": "Stereotyping in counseling most directly harms clients by:",
     "options": [
-      "A) Teaching them about their culture",
-      "B) Ignoring individual differences and assigning characteristics based solely on group membership",
-      "C) Being factually accurate",
-      "D) Only describing group patterns"
+      "A) Teaching clients about their culture and heritage",
+      "B) Ignoring individual differences and assigning characteristics based on group membership",
+      "C) Recognizing both group and individual factors",
+      "D) Helping clients understand cultural identity"
     ],
     "correct": 1,
     "explanation": "Stereotyping overlooks individual variation and attributes group characteristics to individuals, reducing them to group members. This limits seeing clients' unique strengths, challenges, and needs."
@@ -3723,10 +3723,10 @@ export const QUESTIONS = [
     "domain": "Social & Cultural Diversity",
     "question": "Prejudice differs from discrimination in that prejudice is:",
     "options": [
-      "A) Only negative attitudes",
-      "B) A negative attitude or belief, while discrimination is the harmful action based on that attitude",
+      "A) Prejudice is a behavior while discrimination is an attitude",
+      "B) Prejudice is a negative attitude or belief, while discrimination is the harmful action based on that attitude",
       "C) The same as discrimination",
-      "D) Only related to race"
+      "D) Prejudice is less harmful than discrimination"
     ],
     "correct": 1,
     "explanation": "Prejudice is an attitude or belief (often negative); discrimination is the behavioral expression—treating people unfairly based on group membership. Both exist and are problematic."
@@ -3735,9 +3735,9 @@ export const QUESTIONS = [
     "domain": "Social & Cultural Diversity",
     "question": "YAVIS bias (Youthful, Attractive, Verbal, Intelligent, Successful) in therapy suggests which counselor tendency?",
     "options": [
-      "A) Counselors only work with YAVIS clients",
-      "B) Counselors may preferentially work with and have better outcomes with clients matching YAVIS characteristics",
-      "C) YAVIS clients need therapy less",
+      "A) Youth services are always better quality",
+      "B) Counselors may preferentially work with and have better outcomes with YAVIS-matching clients",
+      "C) All counselor biases can be eliminated with training",
       "D) YAVIS characteristics guarantee good counseling outcomes"
     ],
     "correct": 1,
@@ -3747,10 +3747,10 @@ export const QUESTIONS = [
     "domain": "Social & Cultural Diversity",
     "question": "QUOID bias (lower socioeconomic status, older, less intelligent, introversion, disabled) reflects counselor tendencies to:",
     "options": [
-      "A) Provide better care to these clients",
+      "A) Provide better care to these clients because they have greater needs",
       "B) View these clients less favorably, potentially providing lower-quality services",
-      "C) Prioritize these clients",
-      "D) These clients don't need therapy"
+      "C) Ensure these clients receive free counseling",
+      "D) Avoid working with these populations"
     ],
     "correct": 1,
     "explanation": "QUOID bias describes counselor tendencies to view these clients less favorably and potentially offer less-sophisticated interventions. Counselors must actively counter this bias."
@@ -3759,10 +3759,10 @@ export const QUESTIONS = [
     "domain": "Social & Cultural Diversity",
     "question": "Intersectionality in counseling refers to which concept?",
     "options": [
-      "A) People having only one identity",
-      "B) The overlapping, interconnected nature of multiple social identities affecting someone's lived experience",
-      "C) Geographic locations",
-      "D) Only addressing the largest social group someone belongs to"
+      "A) How race and gender are always in conflict",
+      "B) The overlapping, interconnected nature of multiple social identities affecting lived experience",
+      "C) The idea that all forms of oppression are identical",
+      "D) Only addressing the largest social group"
     ],
     "correct": 1,
     "explanation": "Intersectionality recognizes that individuals hold multiple social identities (race, gender, class, sexuality, ability, etc.) that interact and create unique experiences. A Black woman's experience differs from Black men's or White women's."
@@ -3771,9 +3771,9 @@ export const QUESTIONS = [
     "domain": "Social & Cultural Diversity",
     "question": "Understanding intersectionality helps counselors recognize that a client's experience is shaped by:",
     "options": [
-      "A) Only their race",
-      "B) Only their gender",
-      "C) Only their class",
+      "A) Race only affects client experience",
+      "B) Only their gender determines experiences",
+      "C) Identity is static and unchanging",
       "D) The unique interaction of their multiple identities"
     ],
     "correct": 3,
@@ -3784,9 +3784,9 @@ export const QUESTIONS = [
     "question": "Cultural relativism in counseling means:",
     "options": [
       "A) All counseling practices are equally good regardless of culture",
-      "B) Understanding and respecting cultural practices within their own context without imposing external judgment",
-      "C) Counselors should never challenge any cultural belief",
-      "D) All cultures are identical"
+      "B) Understanding and respecting cultural practices within their own context without imposing judgment",
+      "C) Abandoning all ethical standards for the sake of cultural respect",
+      "D) Believing that Western approaches are superior to all others"
     ],
     "correct": 1,
     "explanation": "Cultural relativism involves understanding practices within cultural context rather than applying external standards. It differs from moral relativism—counselors still address harmful practices while respecting cultural values."
@@ -3807,8 +3807,8 @@ export const QUESTIONS = [
     "domain": "Social & Cultural Diversity",
     "question": "When counseling someone from a culture unfamiliar to the counselor, what is the most ethical approach?",
     "options": [
-      "A) Pretend to have knowledge",
-      "B) Decline the client immediately",
+      "A) Use the same approach with all clients regardless of culture",
+      "B) Refer all clients from unfamiliar cultures to another counselor",
       "C) Show genuine curiosity, ask respectful questions, seek education, and acknowledge knowledge limits",
       "D) Use only generic counseling approaches"
     ],
@@ -3819,10 +3819,10 @@ export const QUESTIONS = [
     "domain": "Social & Cultural Diversity",
     "question": "The concept of 'cultural brokers' or 'culture guides' in counseling refers to:",
     "options": [
-      "A) Counselors claiming to know all about a culture",
-      "B) Community members or clients themselves helping counselors understand cultural context",
-      "C) Only paid consultants",
-      "D) Official government positions"
+      "A) Counselors claiming to be experts about all cultures",
+      "B) Community members or clients helping counselors understand cultural context",
+      "C) Government officials monitoring cultural practices",
+      "D) International organizations promoting culture"
     ],
     "correct": 1,
     "explanation": "Cultural brokers may be community members, clients, or consultants helping counselors understand cultural norms and dynamics. Respecting clients as experts about their own culture honors cultural knowledge."
@@ -3843,10 +3843,10 @@ export const QUESTIONS = [
     "domain": "Social & Cultural Diversity",
     "question": "The strengths-based approach in counseling with diverse clients emphasizes which aspect?",
     "options": [
-      "A) Only pathology and problems",
+      "A) Individual characteristics and demographics only",
       "B) Cultural strengths, resilience, and adaptive strategies clients and communities have developed",
-      "C) Ignoring challenges",
-      "D) Only individual characteristics"
+      "C) Financial and material assets exclusively",
+      "D) Only strengths related to education"
     ],
     "correct": 1,
     "explanation": "Strengths-based approaches recognize cultural strengths—extended family systems, spirituality, community ties, resilience developed through adversity. These complement addressing challenges."
@@ -3857,8 +3857,8 @@ export const QUESTIONS = [
     "options": [
       "A) Using identical interventions for all cultural groups",
       "B) Modifying interventions to fit clients' cultural worldviews while maintaining evidence-based principles",
-      "C) Creating entirely different theories for each culture",
-      "D) Never adapting anything"
+      "C) Abandoning evidence-based practices for cultural preferences",
+      "D) Ignoring cultural differences in intervention delivery"
     ],
     "correct": 1,
     "explanation": "Cultural adaptation involves respecting cultural worldviews while implementing evidence-based interventions. This might mean adjusting pacing, language, involving family, or connecting to spiritual practices."
@@ -3867,10 +3867,10 @@ export const QUESTIONS = [
     "domain": "Social & Cultural Diversity",
     "question": "When a client's cultural values seem to contradict mental health goals (e.g., family obligation vs. individual autonomy), the counselor should:",
     "options": [
-      "A) Insist on the counselor's values",
+      "A) Ignore the client's cultural values entirely",
       "B) Explore both values, understand the client's perspective, and collaborate on an approach respecting both",
       "C) Blame the culture for the problem",
-      "D) Assume the client is confused"
+      "D) Force the client to choose between culture and mental health"
     ],
     "correct": 1,
     "explanation": "Value conflicts require collaborative exploration. Counselors can help clients integrate cultural values with mental health goals, rather than forcing a choice between them."
@@ -3879,9 +3879,9 @@ export const QUESTIONS = [
     "domain": "Social & Cultural Diversity",
     "question": "The concept of 'code-switching' in diverse populations refers to which communication behavior?",
     "options": [
-      "A) Changing one's entire identity",
+      "A) Avoiding speaking in front of authority figures",
       "B) Changing communication style, language, or behavior to fit different social contexts",
-      "C) Being dishonest or fake",
+      "C) Being dishonest about one's identity",
       "D) Speaking multiple languages simultaneously"
     ],
     "correct": 1,
@@ -3903,8 +3903,8 @@ export const QUESTIONS = [
     "domain": "Social & Cultural Diversity",
     "question": "When counseling a client from a collectivist culture, which therapeutic goal modification might be appropriate?",
     "options": [
-      "A) Emphasizing complete independence",
-      "B) Ignoring family and community relationships",
+      "A) Ignore family and focus on individual independence",
+      "B) Only addressing family problems",
       "C) Including family in treatment and emphasizing harmony and community welfare alongside individual goals",
       "D) Telling the client to abandon cultural values"
     ],
@@ -3915,10 +3915,10 @@ export const QUESTIONS = [
     "domain": "Social & Cultural Diversity",
     "question": "The role of family in mental health across cultures is best understood through which lens?",
     "options": [
-      "A) Family is equally important everywhere",
-      "B) Family is irrelevant to mental health",
+      "A) Family is irrelevant to mental health",
+      "B) Family involvement is identical in all cultures",
       "C) Family structure, involvement, and emotional expression vary significantly across cultures",
-      "D) Only Western nuclear families matter"
+      "D) Family only matters in Eastern cultures"
     ],
     "correct": 2,
     "explanation": "Family roles, decision-making authority, emotional expressiveness, and intergenerational relationships vary across cultures. Extended family systems are primary in many non-Western cultures."
@@ -3927,9 +3927,9 @@ export const QUESTIONS = [
     "domain": "Social & Cultural Diversity",
     "question": "When a client's family or community would disapprove of counseling, what ethical stance is most appropriate?",
     "options": [
-      "A) Tell the client not to come",
+      "A) Require the client to inform their family before counseling",
       "B) Understand the cultural context while supporting the client's right to seek help",
-      "C) Require family permission",
+      "C) Tell them counseling is more important than cultural respect",
       "D) Dismiss the client's cultural concerns"
     ],
     "correct": 1,
@@ -5550,7 +5550,7 @@ export const QUESTIONS = [
       "A) The ability to change careers frequently without consequence",
       "B) The capacity to adjust to changing work conditions and manage career transitions",
       "C) The willingness to accept any job offered",
-      "D) The skill to negotiate higher salaries"
+      "D) The skill to negotiate higher salaries, which represents a limited view of the construct"
     ],
     "correct": 1,
     "explanation": "Career adaptability, developed by Savickas and others, refers to psychological resources for managing career changes and transitions. In an era of non-linear careers and frequent changes, adaptability (resilience, planning, confidence, concern) is more critical than finding a single perfect fit."
@@ -5598,7 +5598,7 @@ export const QUESTIONS = [
       "A) Work Values Inventory or similar values assessment",
       "B) General IQ or aptitude test",
       "C) Personality disorder screening inventory",
-      "D) Academic achievement test"
+      "D) Academic achievement test, which represents a limited view of the construct"
     ],
     "correct": 0,
     "explanation": "Work values inventories directly assess what clients find meaningful and motivating (e.g., autonomy, helping others, financial security) and serve as anchors for career exploration. Understanding values creates a framework for evaluating options beyond just interests or abilities."
@@ -5619,10 +5619,10 @@ export const QUESTIONS = [
     "domain": "Career Development",
     "question": "The 'glass ceiling' and 'sticky floor' are terms that refer to which career development phenomenon?",
     "options": [
-      "A) The normal progression through career stages",
-      "B) Structural barriers preventing advancement for women and minorities, especially at different points",
-      "C) Individual failure to pursue career opportunities",
-      "D) The natural consequence of career choices"
+      "A) The typical progression through career development stages across the lifespan",
+      "B) Structural barriers preventing advancement for women and minorities at different points",
+      "C) Individual failure to recognize and pursue available career opportunities",
+      "D) The natural consequence of personal career choices and decision-making patterns"
     ],
     "correct": 1,
     "explanation": "The glass ceiling refers to invisible barriers preventing women and minorities from reaching upper leadership positions; the sticky floor describes barriers to entering and advancing from entry-level positions. Both represent systemic rather than individual limitations on career advancement."
@@ -5667,7 +5667,7 @@ export const QUESTIONS = [
     "domain": "Career Development",
     "question": "The concept of 'calling' or vocation in career development refers to which primary meaning?",
     "options": [
-      "A) Only relevant to religious or helping professions",
+      "A) Only relevant to religious or helping professions, overlooking other relevant theoretical perspectives",
       "B) A sense of purpose, meaning, and fit between personal values and work contribution",
       "C) A requirement to achieve specific financial outcomes",
       "D) An unrealistic expectation that most workers should abandon"
@@ -5703,10 +5703,10 @@ export const QUESTIONS = [
     "domain": "Career Development",
     "question": "Which factor is MOST predictive of career satisfaction according to research evidence, across diverse populations?",
     "options": [
-      "A) The prestige or status of the occupation",
-      "B) The salary level achieved",
+      "A) The prestige, status, and reputation of the occupational field",
+      "B) The salary level or income earned in the career position",
       "C) Person-environment fit (alignment of characteristics with job demands/reinforcers)",
-      "D) The number of career changes completed"
+      "D) The number and frequency of career changes completed across lifespan"
     ],
     "correct": 2,
     "explanation": "Decades of research (work adjustment theory, SCCT, organizational psychology) demonstrates that fit between individual characteristics and job environment predicts satisfaction and retention better than external markers like prestige or income. This validates trait-matching and person-environment approaches."
@@ -5751,10 +5751,10 @@ export const QUESTIONS = [
     "domain": "Career Development",
     "question": "Which intervention would be MOST culturally responsive when counseling career development with recent immigrants?",
     "options": [
-      "A) Recommending they pursue only occupations available in their country of origin",
-      "B) Assessing work values, skills, credentials while understanding immigration barriers and credential recognition issues",
-      "C) Assuming their educational background will not transfer",
-      "D) Encouraging rapid entry to any available employment without exploration"
+      "A) Recommending occupations that were available in their country of origin",
+      "B) Understanding credential barriers and assessing transferable work skills",
+      "C) Assuming educational background does not meet U.S. employment standards",
+      "D) Encouraging rapid employment entry without exploration and skill assessment"
     ],
     "correct": 1,
     "explanation": "Culturally responsive career counseling with immigrants acknowledges that credentials may not transfer, language proficiency affects opportunities, and values around work may differ from mainstream assumptions. Counselors should help clients understand both their assets and systemic barriers while building realistic pathways."
@@ -5811,7 +5811,7 @@ export const QUESTIONS = [
     "domain": "Career Development",
     "question": "Which career development theorist specifically emphasized the importance of an individual's locus of control in career decision-making?",
     "options": [
-      "A) Holland",
+      "A) Holland's person-environment fit theory, which emphasizes matching individuals to occupations",
       "B) Super",
       "C) Krumboltz",
       "D) Rotter and subsequent researchers in career literature"
@@ -5823,10 +5823,10 @@ export const QUESTIONS = [
     "domain": "Career Development",
     "question": "When a client says, 'I'm too old to change careers,' which career counseling response would BEST challenge this belief?",
     "options": [
-      "A) Agree and encourage acceptance of current situation",
-      "B) Ignore the statement and proceed with assessment",
-      "C) Explore the evidence for this belief, share research on successful career transitions, and assess transferable skills",
-      "D) Recommend immediate retirement planning instead of career counseling"
+      "A) Agree and encourage acceptance of current career situation",
+      "B) Ignore the statement and proceed with career assessment and testing",
+      "C) Explore evidence, share research on successful transitions, assess transferable skills",
+      "D) Recommend focusing on retirement planning instead of career counseling"
     ],
     "correct": 2,
     "explanation": "This is a limiting belief often driven by internalized ageism. Research demonstrates that people successfully transition careers across the lifespan; counselors should gently challenge this belief while helping the client identify transferable skills and realistic pathways for change if desired."
@@ -5835,10 +5835,10 @@ export const QUESTIONS = [
     "domain": "Career Development",
     "question": "The Dictionary of Occupational Titles (DOT) and Occupational Information Network (O*NET) differ in which important way?",
     "options": [
-      "A) DOT is more current and comprehensive than O*NET",
-      "B) O*NET provides more detailed job analysis and is regularly updated; DOT was its predecessor",
-      "C) They cover entirely different sets of occupations",
-      "D) O*NET is used only for research, not for counseling"
+      "A) The DOT is more current and comprehensive than O*NET today",
+      "B) O*NET provides more detailed job analysis and is regularly updated; DOT was predecessor",
+      "C) They describe and cover entirely different sets of occupations",
+      "D) O*NET is used only for research purposes and not for direct counseling"
     ],
     "correct": 1,
     "explanation": "The DOT, published until 1991, organized occupations primarily by worker functions. O*NET replaced it with a more comprehensive system including worker characteristics, job tasks, work context, and is maintained with current data. Career counselors should use O*NET as the primary occupational information source."
@@ -5862,7 +5862,7 @@ export const QUESTIONS = [
       "A) Careers that follow a single linear progression upward",
       "B) Self-directed careers driven by personal values and learning goals rather than organizational hierarchy",
       "C) Careers marked by frequent job loss and unemployment",
-      "D) Careers limited to traditional full-time employment"
+      "D) Careers limited to traditional full-time employment, which represents a limited view of the construct"
     ],
     "correct": 1,
     "explanation": "Hall's concept of protean careers describes individuals who prioritize personal growth and values alignment over hierarchical advancement and organizational rewards. This pattern is increasingly common in modern work and requires different counseling approaches focused on adaptability and self-direction."
@@ -5885,7 +5885,7 @@ export const QUESTIONS = [
     "options": [
       "A) The barriers women face in advancing in male-dominated fields",
       "B) The hidden advantages and faster advancement some groups experience in female-dominated fields",
-      "C) The slow pace of organizational change",
+      "C) The slow pace of organizational change, which represents a limited view of the construct",
       "D) A metaphor for unrealistic career expectations"
     ],
     "correct": 1,
@@ -5895,7 +5895,7 @@ export const QUESTIONS = [
     "domain": "Career Development",
     "question": "In career counseling with rural or underserved populations, which barrier is MOST commonly encountered?",
     "options": [
-      "A) Lack of career ambition",
+      "A) Lack of career ambition, which represents a limited view of the construct",
       "B) Limited access to career information, role models, and occupational opportunities",
       "C) Preference to remain unemployed",
       "D) Inability to understand career concepts"
@@ -5921,7 +5921,7 @@ export const QUESTIONS = [
     "options": [
       "A) Careers with no ethical boundaries or professional standards",
       "B) Work that crosses organizational and occupational boundaries through gig work, freelancing, or frequent role transitions",
-      "C) Employment with no geographic location specified",
+      "C) Employment with no geographic location specified, which represents a limited view of the construct",
       "D) Careers that have eliminated all job security"
     ],
     "correct": 1,
@@ -5932,7 +5932,7 @@ export const QUESTIONS = [
     "question": "Which is a primary limitation of using personality type (MBTI) as a standalone career planning tool?",
     "options": [
       "A) It provides excessive occupational specificity",
-      "B) It lacks empirical validation",
+      "B) It lacks empirical validation, which represents a limited view of the construct",
       "C) It measures personality preferences, not vocational interests or abilities",
       "D) It cannot be used with diverse populations"
     ],
@@ -5943,7 +5943,7 @@ export const QUESTIONS = [
     "domain": "Career Development",
     "question": "How do contextual influences (family, socioeconomic status, race, gender) relate to career development according to contemporary theories?",
     "options": [
-      "A) Context is irrelevant; career development is purely individual",
+      "A) Context is irrelevant; career development is purely individual without consideration of other assessment information",
       "B) Context determines career outcomes entirely; individual choice is minimal",
       "C) Context shapes opportunity structures, socialization, and access while individuals exercise agency within these constraints",
       "D) Only lower socioeconomic status individuals are affected by context"
@@ -5968,7 +5968,7 @@ export const QUESTIONS = [
     "question": "In the trait-factor approach to career counseling, what is the primary assumption about the match between person and job?",
     "options": [
       "A) Perfect matches are possible and should be pursued",
-      "B) Matches are temporary and constantly shifting",
+      "B) Matches are temporary and constantly shifting, which represents a limited view of the construct",
       "C) Logical matching of measurable traits to job requirements predicts satisfaction and success",
       "D) Matches are determined primarily by luck or chance"
     ],
@@ -5979,7 +5979,7 @@ export const QUESTIONS = [
     "domain": "Career Development",
     "question": "Which statement BEST describes the relationship between career development counseling and mental health counseling?",
     "options": [
-      "A) They are entirely separate domains with no overlap",
+      "A) They are entirely separate domains with no overlap without consideration of other assessment information",
       "B) Career issues are primarily mental health problems requiring therapy",
       "C) They are distinct but can intersect; career distress may trigger or reflect broader mental health concerns",
       "D) Mental health treatment must precede all career counseling"
@@ -5993,7 +5993,7 @@ export const QUESTIONS = [
     "options": [
       "A) To replace interviews and resumes",
       "B) To document skills, accomplishments, and evidence of learning for career exploration and job search",
-      "C) To diagnose career problems",
+      "C) To diagnose career problems, which represents a limited view of the construct",
       "D) To eliminate the need for formal assessments"
     ],
     "correct": 1,
@@ -6015,7 +6015,7 @@ export const QUESTIONS = [
     "domain": "Career Development",
     "question": "The concept of 'spiritual calling' or intrinsic motivation in career development is MOST aligned with which theoretical framework?",
     "options": [
-      "A) Trait-factor theory exclusively",
+      "A) Trait-factor theory exclusively, which represents a limited view of the construct",
       "B) Self-determination theory and meaning-based approaches emphasizing autonomy, purpose, and contribution",
       "C) Only relevant for clergy and religious professionals",
       "D) Incompatible with secular career counseling"
@@ -6051,7 +6051,7 @@ export const QUESTIONS = [
     "domain": "Career Development",
     "question": "In career counseling with clients experiencing burnout or job stress, which intervention addresses the root issue?",
     "options": [
-      "A) Recommending stress management techniques only",
+      "A) Recommending stress management techniques only, overlooking other relevant theoretical perspectives",
       "B) Exploring fit between person and environment, workload, values alignment, and potential career changes",
       "C) Suggesting brief vacation before returning to the same situation",
       "D) Normalizing burnout as inevitable in all careers"
@@ -6063,7 +6063,7 @@ export const QUESTIONS = [
     "domain": "Career Development",
     "question": "Which assessment would be MOST appropriate for identifying potential occupational options for a client who is undecided and has limited self-knowledge?",
     "options": [
-      "A) Advanced personality typing assessment exclusively",
+      "A) Advanced personality typing assessment exclusively, which represents a limited view of the construct",
       "B) Interest inventory (like SII or SDS) combined with values exploration",
       "C) Intelligence or aptitude test alone",
       "D) Occupational preference ranking without assessment"
@@ -6089,7 +6089,7 @@ export const QUESTIONS = [
     "options": [
       "A) Accepting the client's pessimistic view as realistic",
       "B) Building self-efficacy through small successes, identifying existing competencies, and problem-solving concrete barriers",
-      "C) Providing motivational lectures about career possibilities",
+      "C) Providing motivational lectures about career possibilities, which represents a limited view of the construct",
       "D) Recommending they accept whatever job is available"
     ],
     "correct": 1,
@@ -6101,7 +6101,7 @@ export const QUESTIONS = [
     "options": [
       "A) Workers who are fully competent and need no development",
       "B) Individuals expected to manage multiple simultaneous work roles (primary job, side gigs, domestic labor, caregiving)",
-      "C) Workers who are overworked and need vacation",
+      "C) Workers who are overworked and need vacation, which represents a limited view of the construct",
       "D) A meaningless term with no relevance to career counseling"
     ],
     "correct": 1,
@@ -6137,7 +6137,7 @@ export const QUESTIONS = [
     "options": [
       "A) Assuming individual autonomy is the only valid value",
       "B) Understanding that family input, interdependence, and cultural values may appropriately influence decisions",
-      "C) Ignoring family relationships in career planning",
+      "C) Ignoring family relationships in career planning, which represents a limited view of the construct",
       "D) Recommending they assimilate to individualistic career norms"
     ],
     "correct": 1,
@@ -6147,7 +6147,7 @@ export const QUESTIONS = [
     "domain": "Career Development",
     "question": "The 'hidden curriculum' in educational and career settings refers to which phenomenon?",
     "options": [
-      "A) Subjects not officially taught in schools",
+      "A) Subjects not officially taught in schools, which represents a limited view of the construct",
       "B) Socialization into unstated norms, values, and expectations that advantage some students and disadvantage others",
       "C) A deliberate plan to exclude certain students from career preparation",
       "D) An advanced curriculum for gifted students only"
@@ -6159,7 +6159,7 @@ export const QUESTIONS = [
     "domain": "Career Development",
     "question": "Which career development assessment approach would BEST identify barriers and strengths within a client's ecological context?",
     "options": [
-      "A) Trait-factor assessment alone",
+      "A) Trait-factor assessment alone, which represents a limited view of the construct",
       "B) Ecomap or genogram paired with interest/values assessment",
       "C) Cognitive ability testing",
       "D) Personality disorder screening"
@@ -6195,7 +6195,7 @@ export const QUESTIONS = [
     "domain": "Career Development",
     "question": "In counseling individuals facing technological displacement or occupational obsolescence, which counseling focus is MOST essential?",
     "options": [
-      "A) Accepting that the occupation is gone permanently",
+      "A) Accepting that the occupation is gone permanently, which represents a limited view of the construct",
       "B) Identifying transferable skills, facilitating retraining, and supporting adaptation to labor market shifts",
       "C) Recommending early retirement regardless of financial readiness",
       "D) Focusing exclusively on emotional processing without practical planning"
@@ -6207,7 +6207,7 @@ export const QUESTIONS = [
     "domain": "Career Development",
     "question": "Which career development outcome metric is MOST aligned with a holistic, well-being-centered approach rather than purely economic measures?",
     "options": [
-      "A) Highest income achieved",
+      "A) Highest income achieved, which represents a limited view of the construct",
       "B) Satisfaction, meaning, values alignment, and life balance alongside practical sustenance",
       "C) Speed of advancement through organizational hierarchy",
       "D) Perfect match to a pre-identified occupation"
@@ -6234,7 +6234,7 @@ export const QUESTIONS = [
       "A) They have no significant impact on children's career choices",
       "B) They are the only factor determining career outcomes",
       "C) They shape aspirations, values, and opportunity awareness while individuals exercise agency within family context",
-      "D) Career counseling should discourage family input entirely"
+      "D) Career counseling should discourage family input entirely without consideration of other assessment information"
     ],
     "correct": 2,
     "explanation": "Family systems research reveals that parental expectations, family career narrative, opportunity exposure, and messaging about what is 'appropriate' significantly influence children's career development. Counselors should explore family influences while helping clients develop their own voice and choices."
@@ -6245,7 +6245,7 @@ export const QUESTIONS = [
     "options": [
       "A) A form of employee benefit like vacation time",
       "B) Unearned systemic advantages in opportunity, information, and advancement based on group membership",
-      "C) Excessive salary or status",
+      "C) Excessive salary or status, which represents a limited view of the construct",
       "D) Reserved exclusively for executives"
     ],
     "correct": 1,
@@ -6279,7 +6279,7 @@ export const QUESTIONS = [
     "domain": "Career Development",
     "question": "What is the primary limitation of career assessments that focus exclusively on interests and abilities?",
     "options": [
-      "A) They are too comprehensive",
+      "A) They are too comprehensive, which represents a limited view of the construct",
       "B) They neglect values, personality, contextual factors, and meaning-making in career choice",
       "C) They are inappropriate for school-based counseling",
       "D) They provide too much occupational specificity"
@@ -6293,7 +6293,7 @@ export const QUESTIONS = [
     "options": [
       "A) Quickly redirect them to 'realistic' options",
       "B) Explore the aspiration, assess abilities, discuss barriers and pathways, and support informed decision-making",
-      "C) Assume their judgment is impaired",
+      "C) Assume their judgment is impaired, which represents a limited view of the construct",
       "D) Avoid discussing the discrepancy to protect their feelings"
     ],
     "correct": 1,
@@ -6306,7 +6306,7 @@ export const QUESTIONS = [
       "A) A single negative comment from a supervisor",
       "B) Developmental transitions (graduation, becoming a parent, health change) or significant life changes",
       "C) Reaching a certain age regardless of life circumstances",
-      "D) Economic improvement"
+      "D) Economic improvement, which represents a limited view of the construct"
     ],
     "correct": 1,
     "explanation": "Life transitions (developmental milestones and significant events) naturally prompt career reassessment. These teachable moments offer opportunities for counselors to help clients explore whether their current career alignment meets their evolving needs, values, and circumstances."
@@ -6317,7 +6317,7 @@ export const QUESTIONS = [
     "options": [
       "A) It was equally important in earlier eras but less discussed",
       "B) Contemporary workers prioritize integration of multiple life roles; technology blurs work-life boundaries requiring new strategies",
-      "C) Only women have ever been concerned with balance",
+      "C) Only women have ever been concerned with balance, overlooking other relevant theoretical perspectives",
       "D) Work-life balance is less important to younger workers"
     ],
     "correct": 1,
@@ -6330,7 +6330,7 @@ export const QUESTIONS = [
       "A) Accepting the client's current situation as unchangeable",
       "B) Meeting clients at their current developmental stage, knowledge level, and readiness for action",
       "C) Assuming all clients need the same interventions",
-      "D) Avoiding challenging clients to growth"
+      "D) Avoiding challenging clients to growth important factors that influence career development outcomes"
     ],
     "correct": 1,
     "explanation": "Starting where the client is means tailoring interventions to their developmental readiness (crystallized vs. ambivalent), prior knowledge and skills, life circumstances, and current emotional capacity. This honors the client's actual starting point rather than imposing a standard approach."
@@ -6340,7 +6340,7 @@ export const QUESTIONS = [
     "question": "Which assessment finding would suggest that career indecision reflects a need for more information versus psychological distress?",
     "options": [
       "A) The client cannot identify any interests or values",
-      "B) The client expresses anxiety about career decisions",
+      "B) The client expresses anxiety about career decisions, which represents a limited view of the construct",
       "C) The client can articulate interests but needs occupational knowledge to evaluate options",
       "D) All indecision indicates psychological distress requiring referral"
     ],
@@ -6352,7 +6352,7 @@ export const QUESTIONS = [
     "question": "What does research on career success in underrepresented groups reveal about the role of mentorship?",
     "options": [
       "A) Mentorship is not important for career advancement",
-      "B) Formal mentorship programs eliminate all barriers",
+      "B) Formal mentorship programs eliminate all barriers, which represents a limited view of the construct",
       "C) Access to mentors and sponsors significantly impacts advancement opportunities and institutional navigation",
       "D) Mentors should be from the same demographic group exclusively"
     ],
@@ -6363,7 +6363,7 @@ export const QUESTIONS = [
     "domain": "Career Development",
     "question": "In the context of career counseling, what is the distinction between 'needs' and 'values'?",
     "options": [
-      "A) They are identical concepts",
+      "A) They are identical concepts, which represents a limited view of the construct",
       "B) Needs are requirements for well-being; values are what individuals believe is important",
       "C) Values are less important than needs in career decisions",
       "D) Needs are only relevant in impoverished populations"
@@ -6377,7 +6377,7 @@ export const QUESTIONS = [
     "options": [
       "A) Finding a single career to pursue for decades",
       "B) Portfolio careers, gig work, purpose-driven work, and frequent job changes",
-      "C) Strict loyalty to one organization",
+      "C) Strict loyalty to one organization, which represents a limited view of the construct",
       "D) Minimizing focus on work-life integration"
     ],
     "correct": 1,
@@ -6399,7 +6399,7 @@ export const QUESTIONS = [
     "domain": "Career Development",
     "question": "When career counseling is integrated with academic advising, which student outcome is MOST strongly supported?",
     "options": [
-      "A) Higher test scores",
+      "A) Higher test scores, which represents a limited view of the construct",
       "B) Clearer career direction and more intentional academic choices aligned with career goals",
       "C) Increased sense of pressure and stress",
       "D) Less diversity in major selection"
@@ -6413,7 +6413,7 @@ export const QUESTIONS = [
     "options": [
       "A) Assuming they cannot hold professional jobs",
       "B) Identifying career environments that accommodate their strengths (e.g., high-stimulation, hands-on, flexible structures) and addressing support needs",
-      "C) Recommending only sheltered work",
+      "C) Recommending only sheltered work, neglecting environmental and systemic influences",
       "D) Treating ADHD as irrelevant to career planning"
     ],
     "correct": 1,
@@ -6423,7 +6423,7 @@ export const QUESTIONS = [
     "domain": "Career Development",
     "question": "In career counseling, the concept of 'career calling' is MOST strongly supported by research in which domain?",
     "options": [
-      "A) All occupations equally",
+      "A) All occupations equally, which represents a limited view of the construct",
       "B) Only helping professions (teaching, nursing, counseling, ministry)",
       "C) High-paying professions exclusively",
       "D) Any field where individuals perceive meaningful contribution and values alignment"
@@ -6435,7 +6435,7 @@ export const QUESTIONS = [
     "domain": "Career Development",
     "question": "Which element is MOST critical in designing career counseling for high school students to promote equity in opportunity and access?",
     "options": [
-      "A) Focusing only on college preparation paths",
+      "A) Focusing only on college preparation paths, overlooking other relevant theoretical perspectives",
       "B) Providing comprehensive occupational information on diverse pathways including apprenticeships, technical trades, and various educational routes",
       "C) Assuming all students should aspire to four-year universities",
       "D) Limiting career exploration to common local occupations"
@@ -6555,7 +6555,7 @@ export const QUESTIONS = [
     "domain": "Helping Relationships",
     "question": "In narrative therapy, what is 'externalization'?",
     "options": [
-      "A) The therapist's expression of countertransference",
+      "A) The therapist's expression of countertransference, which represents a limited view of the construct",
       "B) Separating the person from the problem by treating the problem as external",
       "C) The client's avoidance of emotional material",
       "D) The process of creating behavioral change plans"
@@ -6702,7 +6702,7 @@ export const QUESTIONS = [
       "A) Direct provider of counseling services to the client",
       "B) Expert advisor working collaboratively with the consultee to address concerns",
       "C) Supervisor monitoring the consultee's clinical work",
-      "D) Administrator of organizational policy"
+      "D) Administrator of organizational policy, which represents a limited view of the construct"
     ],
     "correct": 1,
     "explanation": "Consultation involves an expert providing professional guidance to a consultee about a specific problem or client, maintaining a collaborative relationship."
@@ -6737,7 +6737,7 @@ export const QUESTIONS = [
     "options": [
       "A) Having personal friends from diverse backgrounds",
       "B) Awareness of own cultural identity, biases, and the limits of one's competence",
-      "C) Knowing all cultural groups' characteristics",
+      "C) Knowing all cultural groups' characteristics, which represents a limited view of the construct",
       "D) Using the same interventions for all clients regardless of background"
     ],
     "correct": 1,
@@ -6759,7 +6759,7 @@ export const QUESTIONS = [
     "domain": "Helping Relationships",
     "question": "How does neuroscience inform modern counseling practice?",
     "options": [
-      "A) Neuroscience proves that talk therapy is ineffective",
+      "A) Neuroscience proves that talk therapy is ineffective, which represents a limited view of the construct",
       "B) Understanding brain development and neuroplasticity helps explain how experiences and relationships affect neural pathways",
       "C) Neuroimaging is required to diagnose all mental health conditions",
       "D) The brain's function is static and unchangeable in adulthood"
@@ -6783,7 +6783,7 @@ export const QUESTIONS = [
     "domain": "Helping Relationships",
     "question": "What is the relationship between the therapeutic alliance and treatment outcomes?",
     "options": [
-      "A) The alliance has minimal impact; technique matters most",
+      "A) The alliance has minimal impact; technique matters most, which represents a limited view of the construct",
       "B) The alliance is one of the strongest predictors of positive outcomes across different therapies",
       "C) The alliance is only important in person-centered therapy",
       "D) The alliance becomes less important as the client improves"
@@ -6795,7 +6795,7 @@ export const QUESTIONS = [
     "domain": "Helping Relationships",
     "question": "In Rogers' theory, what does 'conditions of worth' mean?",
     "options": [
-      "A) Financial payment for therapy services",
+      "A) Financial payment for therapy services, which represents a limited view of the construct",
       "B) Love and acceptance that is conditional on meeting others' standards",
       "C) The qualifications required to practice counseling",
       "D) Achievements that contribute to self-esteem"
@@ -6819,7 +6819,7 @@ export const QUESTIONS = [
     "domain": "Helping Relationships",
     "question": "What is the primary goal of behavior activation in CBT?",
     "options": [
-      "A) To eliminate all negative thoughts",
+      "A) To eliminate all negative thoughts, which represents a limited view of the construct",
       "B) To engage in valued activities to improve mood and counter depression",
       "C) To develop strategies for avoiding difficult situations",
       "D) To increase motivation through external rewards"
@@ -6833,7 +6833,7 @@ export const QUESTIONS = [
     "options": [
       "A) Work-related tasks that need completion",
       "B) Unexpressed emotions or unresolved relationships from the past affecting present functioning",
-      "C) Financial obligations",
+      "C) Financial obligations, which represents a limited view of the construct",
       "D) Goals that have not yet been achieved"
     ],
     "correct": 1,
@@ -6845,7 +6845,7 @@ export const QUESTIONS = [
     "options": [
       "A) To encourage the client to leave the session",
       "B) To allow the client to engage in dialogue with an imagined person or part of self",
-      "C) To reduce the cost of therapy",
+      "C) To reduce the cost of therapy, which represents a limited view of the construct",
       "D) To prevent the client from making eye contact"
     ],
     "correct": 1,
@@ -6857,7 +6857,7 @@ export const QUESTIONS = [
     "options": [
       "A) Happiness is the primary goal of life",
       "B) Meaning can be found even in suffering and difficult circumstances",
-      "C) The past determines the future",
+      "C) The past determines the future, which represents a limited view of the construct",
       "D) External circumstances control our emotional responses"
     ],
     "correct": 1,
@@ -6879,7 +6879,7 @@ export const QUESTIONS = [
     "domain": "Helping Relationships",
     "question": "What is 'de-centering' as a client skill taught in CBT?",
     "options": [
-      "A) Focusing more intensely on one's thoughts",
+      "A) Focusing more intensely on one's thoughts while neglecting other important variables in career development",
       "B) Viewing thoughts and feelings as mental events rather than absolute truths",
       "C) Moving away from the counselor's office",
       "D) Becoming self-centered and resistant to feedback"
@@ -6903,7 +6903,7 @@ export const QUESTIONS = [
     "domain": "Helping Relationships",
     "question": "In strategic family therapy (Haley), what is the purpose of prescribing the symptom?",
     "options": [
-      "A) To cure the problem permanently",
+      "A) To cure the problem permanently, which represents a limited view of the construct",
       "B) To increase the symptom until the client's resistance breaks down",
       "C) To help the client gain control over the symptom or realize it is changeable",
       "D) To prove the therapist's expertise"
@@ -6918,7 +6918,7 @@ export const QUESTIONS = [
       "A) Family members having identical opinions",
       "B) Alignment of words, tone, and body language in communication",
       "C) The therapist's personal values matching the client's",
-      "D) Consistent punishment for misbehavior"
+      "D) Consistent punishment for misbehavior, which represents a limited view of the construct"
     ],
     "correct": 1,
     "explanation": "Satir emphasized congruent communication where the speaker's words, tone, and body language are aligned, promoting genuine and authentic family interactions."
@@ -6930,7 +6930,7 @@ export const QUESTIONS = [
       "A) Ignoring negative events and focusing only on positive ones",
       "B) Viewing a problem from an alternative perspective that emphasizes strengths and resources",
       "C) Teaching the client to always think positively",
-      "D) Avoiding discussion of pain or difficulties"
+      "D) Avoiding discussion of pain or difficulties important factors that influence career development outcomes"
     ],
     "correct": 1,
     "explanation": "Positive reframing shifts perspective to highlight existing strengths, resources, and possibilities, without denying difficulties—supporting solution-focused work."
@@ -6939,7 +6939,7 @@ export const QUESTIONS = [
     "domain": "Helping Relationships",
     "question": "In solution-focused brief therapy, what is a 'miracle question'?",
     "options": [
-      "A) A question about religious beliefs",
+      "A) A question about religious beliefs, which represents a limited view of the construct",
       "B) A question asking clients to imagine waking up and the problem being solved, used to identify goals and resources",
       "C) A question about unlikely life changes",
       "D) A therapeutic technique that promises instant cure"
@@ -6953,7 +6953,7 @@ export const QUESTIONS = [
     "options": [
       "A) They work equally well for all clients and problems",
       "B) They are more efficient and practical for managed care settings while maintaining effectiveness",
-      "C) They eliminate the need for therapeutic alliance",
+      "C) They eliminate the need for therapeutic alliance, which represents a limited view of the construct",
       "D) They are based solely on empirical research"
     ],
     "correct": 1,
@@ -6965,7 +6965,7 @@ export const QUESTIONS = [
     "options": [
       "A) It is determined solely by childhood experiences",
       "B) It represents a unique pattern of beliefs, goals, and behaviors that guide an individual's approach to life",
-      "C) It is synonymous with socioeconomic status",
+      "C) It is synonymous with socioeconomic status, which represents a limited view of the construct",
       "D) It cannot be changed in adulthood"
     ],
     "correct": 1,
@@ -6978,7 +6978,7 @@ export const QUESTIONS = [
       "A) A sign of mental illness requiring diagnosis",
       "B) An exaggerated feeling of inadequacy that interferes with functioning and goal pursuit",
       "C) A normal developmental stage",
-      "D) Inferior intelligence"
+      "D) Inferior intelligence, which represents a limited view of the construct"
     ],
     "correct": 1,
     "explanation": "An inferiority complex in Adlerian theory is when feelings of inferiority become excessive and prevent positive striving or movement toward goals."
@@ -6990,7 +6990,7 @@ export const QUESTIONS = [
       "A) Planning for the future",
       "B) Attributing one's own unacceptable thoughts or feelings to another person",
       "C) Creating a mental image",
-      "D) Expressing disagreement"
+      "D) Expressing disagreement, which represents a limited view of the construct"
     ],
     "correct": 1,
     "explanation": "Projection is a defense mechanism where internal conflicts or unacceptable impulses are attributed to others, protecting the self from awareness."
@@ -6999,7 +6999,7 @@ export const QUESTIONS = [
     "domain": "Helping Relationships",
     "question": "What is the primary goal of exposure therapy in treating anxiety disorders?",
     "options": [
-      "A) To avoid triggers that cause anxiety",
+      "A) To avoid triggers that cause anxiety important factors that influence career development outcomes",
       "B) To gradually confront feared situations while managing anxiety, leading to reduced fear responses",
       "C) To increase anxiety to develop resilience",
       "D) To eliminate all feelings of anxiety"
@@ -7038,7 +7038,7 @@ export const QUESTIONS = [
       "A) The counselor deciding what is best for the client",
       "B) Exploring the pros and cons of changing and not changing to resolve ambivalence",
       "C) The client making a final decision about treatment",
-      "D) Financial considerations in therapy"
+      "D) Financial considerations in therapy, which represents a limited view of the construct"
     ],
     "correct": 1,
     "explanation": "Decisional balance involves exploring the benefits and costs of both change and the status quo, helping clients work through ambivalence."
@@ -7071,7 +7071,7 @@ export const QUESTIONS = [
     "domain": "Helping Relationships",
     "question": "What is the purpose of summarization in counseling?",
     "options": [
-      "A) To save time in sessions",
+      "A) To save time in sessions, which represents a limited view of the construct",
       "B) To demonstrate understanding, check accuracy, and provide direction or closure",
       "C) To avoid discussing difficult topics",
       "D) To provide advice to the client"
@@ -7085,7 +7085,7 @@ export const QUESTIONS = [
     "options": [
       "A) Waiting for the client to finish talking before responding",
       "B) Full engagement with the client through verbal and nonverbal attention, reflection, and validation",
-      "C) Giving advice while the client speaks",
+      "C) Giving advice while the client speaks, which represents a limited view of the construct",
       "D) Listening while formulating the next question"
     ],
     "correct": 1,
@@ -7095,7 +7095,7 @@ export const QUESTIONS = [
     "domain": "Helping Relationships",
     "question": "What is 'empathy' as defined in counseling practice?",
     "options": [
-      "A) Feeling pity for the client's situation",
+      "A) Feeling pity for the client's situation, which represents a limited view of the construct",
       "B) Sharing the same experiences as the client",
       "C) Understanding and communicating understanding of the client's perspective and emotional experience",
       "D) Agreeing with all of the client's viewpoints"
@@ -7146,7 +7146,7 @@ export const QUESTIONS = [
       "A) The client's lack of effort",
       "B) A return to previous behavior patterns after making changes",
       "C) Permanent failure to change",
-      "D) The counselor's inadequacy"
+      "D) The counselor's inadequacy, which represents a limited view of the construct"
     ],
     "correct": 1,
     "explanation": "Relapse involves temporarily or permanently returning to previous behaviors; the model views this as a normal part of the change process rather than total failure."
@@ -7194,7 +7194,7 @@ export const QUESTIONS = [
       "A) To provide direct services to the client",
       "B) To improve the consultee's ability to work with current and future clients",
       "C) To evaluate the consultee's performance",
-      "D) To enforce organizational policies"
+      "D) To enforce organizational policies, which represents a limited view of the construct"
     ],
     "correct": 1,
     "explanation": "Caplan's model emphasizes helping the consultee develop skills and insights that transfer to their work with multiple clients, not just addressing one case."
@@ -7239,7 +7239,7 @@ export const QUESTIONS = [
     "domain": "Helping Relationships",
     "question": "What is 'vicarious trauma' or 'compassion fatigue'?",
     "options": [
-      "A) The client's traumatic memories",
+      "A) The client's traumatic memories, which represents a limited view of the construct",
       "B) The counselor's emotional exhaustion from empathically engaging with clients' trauma stories",
       "C) A type of anxiety disorder",
       "D) The client's resistance to treatment"
@@ -7252,7 +7252,7 @@ export const QUESTIONS = [
     "question": "How should a counselor address an ethical violation committed by a colleague?",
     "options": [
       "A) Ignore it to protect the profession's reputation",
-      "B) Gossip about it to other colleagues",
+      "B) Gossip about it to other colleagues, which represents a limited view of the construct",
       "C) Report it through proper channels to the appropriate licensing board or ethics committee",
       "D) Confront the colleague privately and take no further action"
     ],
@@ -7290,7 +7290,7 @@ export const QUESTIONS = [
       "A) Putting cultural beliefs into therapy",
       "B) Limiting one's worldview to one's own cultural perspective, reducing cultural awareness",
       "C) Supporting all cultural practices without question",
-      "D) Learning about multiple cultures"
+      "D) Learning about multiple cultures, which represents a limited view of the construct"
     ],
     "correct": 1,
     "explanation": "Cultural encapsulation occurs when a counselor is unable to step outside their own cultural lens, limiting their ability to understand clients from different backgrounds."
@@ -7299,7 +7299,7 @@ export const QUESTIONS = [
     "domain": "Helping Relationships",
     "question": "How does understanding acculturation impact counseling with immigrant clients?",
     "options": [
-      "A) It is irrelevant to the counseling process",
+      "A) It is irrelevant to the counseling process, which represents a limited view of the construct",
       "B) It helps explain differences in values, stress, and adjustment that may relate to presenting concerns",
       "C) It requires the client to assimilate completely",
       "D) It eliminates the need for other cultural considerations"
@@ -7314,7 +7314,7 @@ export const QUESTIONS = [
       "A) The crossing of streets in a city",
       "B) Multiple, overlapping aspects of identity (race, gender, sexuality, ability, class) that interact to shape experience",
       "C) Conflicts between two cultures",
-      "D) A marketing strategy"
+      "D) A marketing strategy, which represents a limited view of the construct"
     ],
     "correct": 1,
     "explanation": "Intersectionality acknowledges that clients have multiple identities that interact; a client's experience cannot be understood by considering only one identity dimension."
@@ -7323,7 +7323,7 @@ export const QUESTIONS = [
     "domain": "Helping Relationships",
     "question": "In the neurobiology of trauma, what role does the amygdala play?",
     "options": [
-      "A) Stores factual memories of events",
+      "A) Stores factual memories of events, which represents a limited view of the construct",
       "B) Controls logical reasoning and executive function",
       "C) Processes emotional significance and triggers the fight-flight-freeze response to threats",
       "D) Regulates breathing and heart rate"
@@ -7338,7 +7338,7 @@ export const QUESTIONS = [
       "A) The brain is rigid and unchangeable after childhood",
       "B) The ability of the brain to form new neural connections and pathways throughout life, supporting the potential for change in counseling",
       "C) The brain is completely flexible with no biological constraints",
-      "D) It only applies to children"
+      "D) It only applies to children, overlooking other relevant theoretical perspectives"
     ],
     "correct": 1,
     "explanation": "Neuroplasticity demonstrates that repeated experiences, learning, and therapeutic interventions can literally reshape neural architecture, supporting therapeutic optimism."
@@ -7349,7 +7349,7 @@ export const QUESTIONS = [
     "options": [
       "A) It explains why some clients have multiple personalities",
       "B) It describes how the vagus nerve regulates stress response and how clients may shift between states of mobilization, social engagement, or shutdown",
-      "C) It is not relevant to counseling",
+      "C) It is not relevant to counseling, which represents a limited view of the construct",
       "D) It applies only to clients with neurological disorders"
     ],
     "correct": 1,
@@ -7361,7 +7361,7 @@ export const QUESTIONS = [
     "options": [
       "A) The client's ability to make decisions",
       "B) The optimal zone of arousal where the nervous system can process information and respond flexibly",
-      "C) The therapist's work hours",
+      "C) The therapist's work hours, which represents a limited view of the construct",
       "D) How long a session lasts"
     ],
     "correct": 1,
@@ -7374,7 +7374,7 @@ export const QUESTIONS = [
       "A) To teach the client discipline",
       "B) To bring awareness to the present moment and activate the nervous system's window of tolerance",
       "C) To make the client forget their trauma",
-      "D) To force emotional expression"
+      "D) To force emotional expression, which represents a limited view of the construct"
     ],
     "correct": 1,
     "explanation": "Grounding techniques help traumatized clients return to present awareness and regulate their nervous system when triggered by trauma memories or reminders."
@@ -7386,7 +7386,7 @@ export const QUESTIONS = [
       "A) The therapist correcting the client's behavior",
       "B) A new relational experience with the therapist that differs from past relationship patterns, allowing for healing",
       "C) Teaching the client the 'correct' way to think",
-      "D) Punishment for maladaptive behavior"
+      "D) Punishment for maladaptive behavior, which represents a limited view of the construct"
     ],
     "correct": 1,
     "explanation": "A corrective emotional experience occurs when the therapeutic relationship provides a different, healthier relational pattern than the client experienced previously."
@@ -7397,7 +7397,7 @@ export const QUESTIONS = [
     "options": [
       "A) Completing an exercise routine",
       "B) The repeated exploration and processing of unconscious conflicts across different contexts and memories",
-      "C) Ignoring emotional issues",
+      "C) Ignoring emotional issues, which represents a limited view of the construct",
       "D) Making one interpretation and resolving the issue"
     ],
     "correct": 1,
@@ -7409,7 +7409,7 @@ export const QUESTIONS = [
     "options": [
       "A) Insight approaches are more effective than action approaches",
       "B) Insight approaches emphasize understanding causes; action approaches emphasize behavioral change and behavioral momentum",
-      "C) Action approaches avoid discussing feelings",
+      "C) Action approaches avoid discussing feelings important factors that influence career development outcomes",
       "D) Insight approaches only work for educated clients"
     ],
     "correct": 1,
@@ -7419,7 +7419,7 @@ export const QUESTIONS = [
     "domain": "Helping Relationships",
     "question": "What is the significance of 'rupture and repair' in the therapeutic relationship?",
     "options": [
-      "A) It indicates the counselor has failed",
+      "A) It indicates the counselor has failed, which represents a limited view of the construct",
       "B) Moments of disconnection followed by reconnection provide opportunities for deepening trust and understanding",
       "C) It should be avoided at all costs",
       "D) It means the client should find a new therapist"
@@ -7433,7 +7433,7 @@ export const QUESTIONS = [
     "options": [
       "A) A financial investment strategy",
       "B) Developing secure attachment in adulthood despite insecure early relationships, often through therapeutic relationships",
-      "C) A parenting technique",
+      "C) A parenting technique, which represents a limited view of the construct",
       "D) Returning to one's childhood caregiver"
     ],
     "correct": 1,
@@ -7446,7 +7446,7 @@ export const QUESTIONS = [
       "A) Avoiding mental health altogether",
       "B) The capacity to reflect on one's own and others' mental states, intentions, and emotions",
       "C) A type of meditation",
-      "D) Punishment of others"
+      "D) Punishment of others, which represents a limited view of the construct"
     ],
     "correct": 1,
     "explanation": "Mentalization refers to the ability to understand oneself and others in terms of mental states; therapy enhances this capacity, improving relationships and emotional regulation."
@@ -7455,7 +7455,7 @@ export const QUESTIONS = [
     "domain": "Helping Relationships",
     "question": "In schema therapy, what is a 'schema'?",
     "options": [
-      "A) A schedule or calendar",
+      "A) A schedule or calendar, which represents a limited view of the construct",
       "B) A deeply held, generalized belief about oneself, others, or the world formed in childhood",
       "C) A diagram of relationships",
       "D) A plan for the future"
@@ -7467,7 +7467,7 @@ export const QUESTIONS = [
     "domain": "Helping Relationships",
     "question": "What is 'distress tolerance' and why is it important in counseling?",
     "options": [
-      "A) Ignoring feelings of discomfort",
+      "A) Ignoring feelings of discomfort, which represents a limited view of the construct",
       "B) The ability to endure emotional or psychological distress without engaging in harmful coping, essential for therapeutic progress and life satisfaction",
       "C) Pretending everything is fine",
       "D) Increasing pain to build character"
@@ -7482,7 +7482,7 @@ export const QUESTIONS = [
       "A) A way of speaking",
       "B) The balance and synthesis of acceptance and change strategies",
       "C) A type of dialect",
-      "D) Debate"
+      "D) Debate, which represents a limited view of the construct"
     ],
     "correct": 1,
     "explanation": "DBT integrates acceptance (validation, mindfulness) and change (behavioral, cognitive) in a dialectical synthesis appropriate for clients with emotion dysregulation."
@@ -7494,7 +7494,7 @@ export const QUESTIONS = [
       "A) Opinions about politics or religion",
       "B) Fundamental, absolute beliefs about oneself, others, and the world that underlie automatic thoughts",
       "C) Beliefs that cannot be changed",
-      "D) The therapist's personal values"
+      "D) The therapist's personal values, which represents a limited view of the construct"
     ],
     "correct": 1,
     "explanation": "Core beliefs are deeply ingrained, often unconscious beliefs (e.g., 'I am unworthy') that generate automatic thoughts and maintain psychological distress."
@@ -7506,7 +7506,7 @@ export const QUESTIONS = [
       "A) Anxiety disorders exclusively",
       "B) Depression, particularly when inactivity and avoidance maintain the depressive cycle",
       "C) Only severe mental illness",
-      "D) Personality disorders"
+      "D) Personality disorders, which represents a limited view of the construct"
     ],
     "correct": 1,
     "explanation": "Behavioral activation is particularly effective for depression as it interrupts the withdrawal and inactivity that maintain depressed mood."
@@ -7518,7 +7518,7 @@ export const QUESTIONS = [
       "A) Becoming used to a behavior",
       "B) The gradual reduction in anxiety response with repeated, prolonged exposure to a feared stimulus",
       "C) The client's resistance to change",
-      "D) Habit formation"
+      "D) Habit formation, which represents a limited view of the construct"
     ],
     "correct": 1,
     "explanation": "Habituation occurs as the nervous system adapts to the feared stimulus through repeated exposure without avoidance, leading to decreased anxiety."
@@ -7527,7 +7527,7 @@ export const QUESTIONS = [
     "domain": "Helping Relationships",
     "question": "What is 'acceptance and commitment therapy' (ACT) based on?",
     "options": [
-      "A) Eliminating all negative thoughts",
+      "A) Eliminating all negative thoughts, which represents a limited view of the construct",
       "B) Accepting internal experiences while committing to valued action aligned with personal values",
       "C) Accepting mental illness as unchangeable",
       "D) Committing to what others value"
@@ -7541,7 +7541,7 @@ export const QUESTIONS = [
     "options": [
       "A) Disagreeing with one's own thoughts",
       "B) Creating distance from thoughts by changing one's relationship to them rather than changing their content",
-      "C) Thinking logically",
+      "C) Thinking logically, which represents a limited view of the construct",
       "D) Confusing thoughts"
     ],
     "correct": 1,
@@ -7551,7 +7551,7 @@ export const QUESTIONS = [
     "domain": "Helping Relationships",
     "question": "In Acceptance and Commitment Therapy, what is 'values clarification'?",
     "options": [
-      "A) Understanding societal values",
+      "A) Understanding societal values, which represents a limited view of the construct",
       "B) Identifying personal values that provide meaning and direction for committed action",
       "C) Judging the client's values",
       "D) Imposing therapist values on the client"
@@ -7565,7 +7565,7 @@ export const QUESTIONS = [
     "options": [
       "A) Relaxation or meditation exclusively",
       "B) Non-judgmental, present-moment awareness of thoughts, feelings, and sensations",
-      "C) Positive thinking",
+      "C) Positive thinking, which represents a limited view of the construct",
       "D) Clearing the mind of all thoughts"
     ],
     "correct": 1,
@@ -7575,7 +7575,7 @@ export const QUESTIONS = [
     "domain": "Helping Relationships",
     "question": "How does relational depth in counseling enhance therapeutic outcomes?",
     "options": [
-      "A) It is not relevant to outcomes",
+      "A) It is not relevant to outcomes, which represents a limited view of the construct",
       "B) Deep, genuine contact with the client fosters trust, safety, and the conditions for healing and change",
       "C) Only clients with relational issues benefit from depth",
       "D) It increases the risk of dual relationships"
@@ -7587,7 +7587,7 @@ export const QUESTIONS = [
     "domain": "Helping Relationships",
     "question": "What is the 'social baseline theory' and its counseling implications?",
     "options": [
-      "A) Clients should interact with many people",
+      "A) Clients should interact with many people, which represents a limited view of the construct",
       "B) The nervous system is regulated through safe relationships, implying that therapeutic relationships have regulatory and healing effects",
       "C) Counseling is only for socially anxious people",
       "D) Social media is necessary for mental health"
@@ -7599,7 +7599,7 @@ export const QUESTIONS = [
     "domain": "Helping Relationships",
     "question": "In solution-focused therapy, what is 'scaling'?",
     "options": [
-      "A) Climbing toward solutions",
+      "A) Climbing toward solutions, which represents a limited view of the construct",
       "B) A technique where clients rate their progress or perception on a scale (e.g., 1-10) to track change and identify resources",
       "C) Increasing problem severity",
       "D) Avoiding real change"
@@ -7614,7 +7614,7 @@ export const QUESTIONS = [
       "A) Assuming the client will fail",
       "B) Questions that assume change is occurring or will occur, building hope and expectancy",
       "C) Making judgments about the client",
-      "D) Predictions of failure"
+      "D) Predictions of failure, which represents a limited view of the construct"
     ],
     "correct": 1,
     "explanation": "Presupposition questions implicitly assume change has or will happen (e.g., 'When you've solved this...'), activating the client's agency and resourcefulness."
@@ -7625,7 +7625,7 @@ export const QUESTIONS = [
     "options": [
       "A) What the therapist wants for the client",
       "B) The client's vision of themselves and their life free from problem-saturated narratives",
-      "C) An unrealistic fantasy",
+      "C) An unrealistic fantasy, which represents a limited view of the construct",
       "D) The therapist's recommended path"
     ],
     "correct": 1,
@@ -7638,7 +7638,7 @@ export const QUESTIONS = [
       "A) Individual therapy sessions",
       "B) Moments when the problem was absent or less powerful, used to build alternative narratives",
       "C) The therapist's unique approach",
-      "D) Rare diagnoses"
+      "D) Rare diagnoses, which represents a limited view of the construct"
     ],
     "correct": 1,
     "explanation": "Unique outcomes are exceptions to the problem story; exploring them reveals client competency and provides building blocks for counter-narratives."
@@ -7647,7 +7647,7 @@ export const QUESTIONS = [
     "domain": "Helping Relationships",
     "question": "In family therapy, what is 'differentiation of self'?",
     "options": [
-      "A) Being different from one's family",
+      "A) Being different from one's family, which represents a limited view of the construct",
       "B) The ability to maintain a sense of self while remaining emotionally connected to family",
       "C) Family members having different roles",
       "D) Separating from the family entirely"
@@ -7659,10 +7659,10 @@ export const QUESTIONS = [
     "domain": "Helping Relationships",
     "question": "What is the purpose of 'coaching' in experiential family therapy?",
     "options": [
-      "A) Training family members in sports",
+      "Overlooking systemic and environmental factors that significantly influence the client's situation",
       "B) Guiding clients toward enacting new patterns and interactions within sessions",
       "C) Directing all family decisions",
-      "D) Criticizing family members"
+      "D) Criticizing family members, which represents a limited view of the construct"
     ],
     "correct": 1,
     "explanation": "Coaching involves gently guiding family members to try new interactions in session, supporting change through enactment and real-time feedback."
@@ -7673,7 +7673,7 @@ export const QUESTIONS = [
     "options": [
       "A) Being rude or disrespectful",
       "B) Misalignment between inner experience and outward communication or behavior",
-      "C) Disagreement with others",
+      "C) Disagreement with others, which represents a limited view of the construct",
       "D) Breaking a contract"
     ],
     "correct": 1,
@@ -7683,7 +7683,7 @@ export const QUESTIONS = [
     "domain": "Helping Relationships",
     "question": "What are the three main 'coping styles' or 'survival stances' in Satir's model?",
     "options": [
-      "A) Fight, flight, freeze",
+      "A) Fight, flight, freeze, which represents a limited view of the construct",
       "B) Blaming, placating, computing, withdrawing (and later leveling/congruence)",
       "C) Aggressive, passive, assertive",
       "D) Dominant, submissive, neutral"
@@ -7695,7 +7695,7 @@ export const QUESTIONS = [
     "domain": "Helping Relationships",
     "question": "In strategic family therapy, what is the purpose of 'reframing'?",
     "options": [
-      "A) Installing new window frames",
+      "A) Reinforcing existing family hierarchies and established patterns of interaction",
       "B) Offering an alternative perspective on the problem that opens new solutions",
       "C) Denying the problem's seriousness",
       "D) Avoiding the real issues"
@@ -7707,7 +7707,7 @@ export const QUESTIONS = [
     "domain": "Helping Relationships",
     "question": "What is 'joining' in family therapy?",
     "options": [
-      "A) Adding new family members",
+      "A) Adding new family members, which represents a limited view of the construct",
       "B) The therapist's process of building rapport and understanding the family system from within",
       "C) Replacing the family's dynamics",
       "D) Forcing agreement among family members"
@@ -7719,7 +7719,7 @@ export const QUESTIONS = [
     "domain": "Helping Relationships",
     "question": "In Minuchin's structural family therapy, what is 'enactment'?",
     "options": [
-      "A) Acting out a play",
+      "A) Acting out a play, which represents a limited view of the construct",
       "B) Asking family members to interact in the session to reveal and modify patterns",
       "C) Rehearsing for outside interactions",
       "D) Performance for the therapist"
@@ -7733,7 +7733,7 @@ export const QUESTIONS = [
     "options": [
       "A) Sharing all personal information with the client",
       "B) Being open and authentic about feelings, reactions, or limitations within appropriate boundaries",
-      "C) Avoiding responsibility for mistakes",
+      "C) Avoiding responsibility for mistakes important factors that influence career development outcomes",
       "D) Pretending to have answers when you don't"
     ],
     "correct": 1,
@@ -7743,7 +7743,7 @@ export const QUESTIONS = [
     "domain": "Helping Relationships",
     "question": "What is the difference between 'self-disclosure' and 'self-focus'?",
     "options": [
-      "A) They are the same thing",
+      "A) They are the same thing, which represents a limited view of the construct",
       "B) Self-disclosure shares relevant personal information for the client's benefit; self-focus centers on the counselor's needs or experiences",
       "C) Self-focus is appropriate in counseling",
       "D) Neither has a place in counseling"
@@ -7755,7 +7755,7 @@ export const QUESTIONS = [
     "domain": "Helping Relationships",
     "question": "What is 'professional distance' and how should it be maintained?",
     "options": [
-      "A) Complete emotional detachment from clients",
+      "A) Complete emotional detachment from clients, which represents a limited view of the construct",
       "B) A balance of warmth and appropriate boundaries that protects the client while maintaining therapeutic effectiveness",
       "C) No personal contact outside of sessions",
       "D) Never discussing the relationship with the client"
@@ -7853,7 +7853,7 @@ export const QUESTIONS = [
     "options": [
       "A) Discussing past traumatic events exclusively",
       "B) Members' immediate thoughts, feelings, and reactions within the group",
-      "C) Planning for future goals",
+      "C) Planning for future goals, which represents a limited view of the construct",
       "D) Analysis of group statistics"
     ],
     "correct": 1,
@@ -7913,7 +7913,7 @@ export const QUESTIONS = [
     "options": [
       "A) Forces members to be friends",
       "B) Connects work across members or between member concerns",
-      "C) Prevents subgrouping",
+      "C) Prevents subgrouping, which represents a limited view of the construct",
       "D) Ensures all members speak equally"
     ],
     "correct": 1,
@@ -7937,7 +7937,7 @@ export const QUESTIONS = [
     "options": [
       "A) The written rules versus unwritten expectations",
       "B) What members discuss (content) versus how they interact (process)",
-      "C) Psychoeducational versus therapeutic groups",
+      "C) Psychoeducational versus therapeutic groups, which represents a limited view of the construct",
       "D) Leader-directed versus member-directed discussions"
     ],
     "correct": 1,
@@ -7972,7 +7972,7 @@ export const QUESTIONS = [
     "question": "Open groups (continuous membership) differ from closed groups primarily in:",
     "options": [
       "A) Open groups allow new members to join at any time",
-      "B) Open groups are less therapeutic",
+      "B) Open groups are less therapeutic, which represents a limited view of the construct",
       "C) Closed groups are illegal in most states",
       "D) Open groups have smaller membership"
     ],
@@ -7986,7 +7986,7 @@ export const QUESTIONS = [
       "A) The division of members into smaller working teams",
       "B) The formation of alliances or cliques within the larger group",
       "C) Splitting one group into two groups",
-      "D) Individual members working separately"
+      "D) Individual members working separately, which represents a limited view of the construct"
     ],
     "correct": 1,
     "explanation": "Subgrouping is the formation of smaller coalitions within the group that can undermine cohesion and therapeutic work if not addressed."
@@ -8010,7 +8010,7 @@ export const QUESTIONS = [
       "A) Members copying the leader's mannerisms",
       "B) Members adopting healthy coping mechanisms from observing others",
       "C) Members pretending to have problems",
-      "D) Leaders modeling inappropriate behavior"
+      "D) Leaders modeling inappropriate behavior, which represents a limited view of the construct"
     ],
     "correct": 1,
     "explanation": "Imitative behavior is a therapeutic factor where members learn new skills and healthier ways of coping by observing and modeling the behavior of other group members."
@@ -8021,7 +8021,7 @@ export const QUESTIONS = [
     "options": [
       "A) Only cognitive skill development",
       "B) Receiving feedback about one's impact on others and trying new interpersonal behaviors",
-      "C) Memorizing psychological facts",
+      "C) Memorizing psychological facts, which represents a limited view of the construct",
       "D) The leader teaching members communication rules"
     ],
     "correct": 1,
@@ -8033,7 +8033,7 @@ export const QUESTIONS = [
     "options": [
       "A) Lack of confidentiality due to multiple members knowing shared information",
       "B) Too much confidentiality preventing growth",
-      "C) Members paying different fees",
+      "C) Members paying different fees, which represents a limited view of the construct",
       "D) Groups always being larger than individual therapy"
     ],
     "correct": 0,
@@ -8046,7 +8046,7 @@ export const QUESTIONS = [
       "A) Exclude members from future groups",
       "B) Interrupt rambling or monopolizing to refocus the group",
       "C) End the group prematurely",
-      "D) Prevent emotional expression"
+      "D) Prevent emotional expression, which represents a limited view of the construct"
     ],
     "correct": 1,
     "explanation": "Cutting off involves the leader gently interrupting a member who is monopolizing time or going off-topic to maintain group focus and allow others to participate."
@@ -8079,7 +8079,7 @@ export const QUESTIONS = [
     "domain": "Group Counseling",
     "question": "In group counseling, resistance manifests differently than in individual therapy because:",
     "options": [
-      "A) Group members never resist",
+      "A) Group members never resist, which represents a limited view of the construct",
       "B) Resistance is shared, acted out collectively, and influenced by group dynamics",
       "C) Individual resistance is more severe",
       "D) Groups eliminate resistance entirely"
@@ -8091,7 +8091,7 @@ export const QUESTIONS = [
     "domain": "Group Counseling",
     "question": "The ASGW (Association for Specialists in Group Work) standards address which of the following?",
     "options": [
-      "A) Only fee structures",
+      "A) Only fee structures, overlooking other relevant theoretical perspectives",
       "B) Competencies in group work including planning, performing, and evaluating groups",
       "C) Group member schedules only",
       "D) Exclusively psychoeducational groups"
@@ -8165,7 +8165,7 @@ export const QUESTIONS = [
     "options": [
       "A) Eliminate all anxious individuals",
       "B) Ensure potential members can benefit from and contribute to the group",
-      "C) Reduce group sessions",
+      "C) Reduce group sessions, which represents a limited view of the construct",
       "D) Select only members without problems"
     ],
     "correct": 1,
@@ -8177,7 +8177,7 @@ export const QUESTIONS = [
     "options": [
       "A) It's the leader's responsibility to listen equally",
       "B) It prevents other members from participating and receiving group benefits",
-      "C) Monopolizers are intentionally malicious",
+      "C) Monopolizers are intentionally malicious, which represents a limited view of the construct",
       "D) All group members must talk equally"
     ],
     "correct": 1,
@@ -8190,7 +8190,7 @@ export const QUESTIONS = [
       "A) Treating mental health issues",
       "B) Completing a specific work project or goal outside of personal growth",
       "C) Exploring emotional problems",
-      "D) Personal transformation"
+      "D) Personal transformation, which represents a limited view of the construct"
     ],
     "correct": 1,
     "explanation": "Task groups aim to accomplish a specific objective or project, whereas counseling groups focus on member personal development and emotional exploration."
@@ -8225,7 +8225,7 @@ export const QUESTIONS = [
     "options": [
       "A) It prevents any conflict",
       "B) Members may become anxious without sufficient structure or direction",
-      "C) It's too controlling",
+      "C) It's too controlling, which represents a limited view of the construct",
       "D) It eliminates the need for group norms"
     ],
     "correct": 1,
@@ -8235,7 +8235,7 @@ export const QUESTIONS = [
     "domain": "Group Counseling",
     "question": "Support groups differ from counseling groups in that they primarily emphasize:",
     "options": [
-      "A) Deeper psychological analysis",
+      "A) Deeper psychological analysis, which represents a limited view of the construct",
       "B) Peer support and mutual aid among members with similar experiences",
       "C) Leader expertise and direction",
       "D) Diagnosis and treatment planning"
@@ -8247,7 +8247,7 @@ export const QUESTIONS = [
     "domain": "Group Counseling",
     "question": "The 'corrective emotional experience' in group therapy refers to:",
     "options": [
-      "A) Avoiding all emotional triggers",
+      "A) Avoiding all emotional triggers important factors that influence career development outcomes",
       "B) Members experiencing new, healthier ways of relating within the safe group environment",
       "C) Emotionally hurting other members",
       "D) The leader correcting member emotions"
@@ -8283,7 +8283,7 @@ export const QUESTIONS = [
     "domain": "Group Counseling",
     "question": "According to group work literature, the forming stage of group development is best characterized by:",
     "options": [
-      "A) Conflict and competition",
+      "A) Conflict and competition, which represents a limited view of the construct",
       "B) Anxiety, dependency on leader, and polite interaction",
       "C) Full productivity and trust",
       "D) Dissolution and closure"
@@ -8295,7 +8295,7 @@ export const QUESTIONS = [
     "domain": "Group Counseling",
     "question": "The adjourning stage of group development (Tuckman) involves:",
     "options": [
-      "A) Increased conflict and competition",
+      "A) Increased conflict and competition, which represents a limited view of the construct",
       "B) Peak performance and productivity",
       "C) Processing ending, summarizing learning, and managing separation",
       "D) Formation of new subgroups"
@@ -8307,7 +8307,7 @@ export const QUESTIONS = [
     "domain": "Group Counseling",
     "question": "Which of the following best describes the concept of 'universality' in group therapy?",
     "options": [
-      "A) Every group member has identical problems",
+      "A) Every group member has identical problems, which represents a limited view of the construct",
       "B) Members recognize their experiences are not unique and others share similar concerns",
       "C) The group applies to all people universally",
       "D) All group techniques are universally effective"
@@ -8322,7 +8322,7 @@ export const QUESTIONS = [
       "A) Have mild anxiety",
       "B) Are unmotivated, highly narcissistic, or actively suicidal",
       "C) Have never experienced therapy",
-      "D) Work full-time"
+      "D) Work full-time, which represents a limited view of the construct"
     ],
     "correct": 1,
     "explanation": "Members who lack motivation, require excessive attention, pose safety risks, or could significantly harm group dynamics may not be appropriate for group counseling."
@@ -8333,7 +8333,7 @@ export const QUESTIONS = [
     "options": [
       "A) Prevents discussion of past issues",
       "B) Allows members to experience immediate feedback and practice new behaviors in real-time",
-      "C) Eliminates future planning",
+      "C) Eliminates future planning, which represents a limited view of the construct",
       "D) Avoids the need for insight"
     ],
     "correct": 1,
@@ -8343,7 +8343,7 @@ export const QUESTIONS = [
     "domain": "Group Counseling",
     "question": "When a group member engages in scapegoating behavior, the leader's primary responsibility is to:",
     "options": [
-      "A) Remove the targeted member immediately",
+      "A) Remove the targeted member immediately, which represents a limited view of the construct",
       "B) Ignore it to maintain group autonomy",
       "C) Address it directly and explore the group dynamics underlying it",
       "D) Join the group in the scapegoating"
@@ -8355,7 +8355,7 @@ export const QUESTIONS = [
     "domain": "Group Counseling",
     "question": "Yalom's 'primary group therapeutic factors' are valued because they are:",
     "options": [
-      "A) Applicable only to psychoeducational groups",
+      "A) Applicable only to psychoeducational groups, overlooking other relevant theoretical perspectives",
       "B) Based on empirical research and observed across diverse group types",
       "C) Guaranteed to produce instant results",
       "D) Only relevant to group therapy with children"
@@ -8370,7 +8370,7 @@ export const QUESTIONS = [
       "A) Only the topics members discuss",
       "B) Members' body language, tone, interactions, and group dynamics",
       "C) The leader's personal opinions",
-      "D) Content exclusively"
+      "D) Content exclusively, which represents a limited view of the construct"
     ],
     "correct": 1,
     "explanation": "Process observations focus on how members interact, communicate non-verbally, react to each other, and how group dynamics unfold during the session."
@@ -8382,7 +8382,7 @@ export const QUESTIONS = [
       "A) Never discuss group dynamics with members",
       "B) Screen members, establish clear guidelines, and monitor group process and outcomes",
       "C) Allow unlimited group size",
-      "D) Avoid addressing conflict"
+      "D) Avoid addressing conflict important factors that influence career development outcomes"
     ],
     "correct": 1,
     "explanation": "ASGW standards emphasize systematic screening, clear group agreements, ongoing monitoring of group health, and evaluation of leader effectiveness and member outcomes."
@@ -8391,7 +8391,7 @@ export const QUESTIONS = [
     "domain": "Group Counseling",
     "question": "A 'closed' group that has completed its intended duration should address termination by:",
     "options": [
-      "A) Abruptly ending without discussion",
+      "A) Abruptly ending without discussion, which represents a limited view of the construct",
       "B) Allowing members to continue indefinitely",
       "C) Dedicating sessions to reflection on growth, goodbyes, and planning post-group transitions",
       "D) Immediately referring members to individual therapy"
@@ -8415,10 +8415,10 @@ export const QUESTIONS = [
     "domain": "Group Counseling",
     "question": "Group norms are important because they:",
     "options": [
-      "A) Are imposed by the leader",
-      "B) Provide structure, safety, and shared expectations that enable therapeutic work",
-      "C) Prevent individual freedom",
-      "D) Are always stated explicitly only"
+      "A) 34% of scores",
+      "B) 68% of scores",
+      "C) 95% of scores",
+      "D) 99% of scores"
     ],
     "correct": 1,
     "explanation": "Norms—both explicit and implicit—create a secure environment where members understand expectations and can take interpersonal risks necessary for growth."
@@ -8475,10 +8475,10 @@ export const QUESTIONS = [
     "domain": "Group Counseling",
     "question": "The concept of 'group maturity' refers to:",
     "options": [
-      "A) The average age of members",
-      "B) The group's ability to function productively with minimal leader direction",
-      "C) How long the group has existed",
-      "D) Member education levels"
+      "A) Ranges from -1 to +1",
+      "B) Can only be positive",
+      "C) Ranges from 0 to 100",
+      "D) Indicates the strength of a causal relationship"
     ],
     "correct": 1,
     "explanation": "Group maturity is evidenced by members taking responsibility for group functioning, supporting each other, addressing issues independently, and achieving therapeutic goals."
@@ -8529,7 +8529,7 @@ export const QUESTIONS = [
       "D) Conflict escalation"
     ],
     "correct": 1,
-    "explanation": "During the working stage, the group functions optimally with cohesion, trust, commitment, and members actively addressing their concerns and supporting each other."
+    "explanation": "Test-retest reliability measures stability by administering the same test twice to the same group and correlating results. Interval between administrations should be long enough to prevent recall but short enough to ensure no real change in the construct."
   },
   {
     "domain": "Group Counseling",
@@ -8547,10 +8547,10 @@ export const QUESTIONS = [
     "domain": "Group Counseling",
     "question": "When a group has engaged in significant scapegoating, remediation requires:",
     "options": [
-      "A) Removing the scapegoated member",
-      "B) Ignoring the dynamics",
-      "C) Processing the underlying group anxiety and reestablishing safe norms for all members",
-      "D) Accepting scapegoating as natural"
+      "A) The test predicts future behavior",
+      "B) The test appears to be valid on its face",
+      "C) The test measures the hypothetical construct it claims to measure",
+      "D) The test correlates with job performance outcomes"
     ],
     "correct": 2,
     "explanation": "Remediation involves addressing what group anxiety or conflict triggered the scapegoating, reaffirming safety, and rebuilding the targeted member's inclusion and dignity."
@@ -8571,10 +8571,10 @@ export const QUESTIONS = [
     "domain": "Group Counseling",
     "question": "According to research on group outcomes, the quality of the therapeutic alliance between leader and members predicts:",
     "options": [
-      "A) Nothing about outcomes",
-      "B) Poor outcomes only",
-      "C) Positive therapeutic outcomes as strongly as in individual therapy",
-      "D) Only short-term gains"
+      "A) Whether test predictions are confirmed by later behavior",
+      "B) How the test looks to test-takers",
+      "C) Whether the test reliably measures the same construct across administrations",
+      "D) Correlation with other tests given at the same time"
     ],
     "correct": 2,
     "explanation": "The therapeutic alliance—group members' perception of safety, trust, and collaboration with the leader—significantly predicts positive outcomes in group therapy."
@@ -8595,10 +8595,10 @@ export const QUESTIONS = [
     "domain": "Group Counseling",
     "question": "When working with involuntary group members (e.g., court-ordered), the leader should:",
     "options": [
-      "A) Force compliance",
-      "B) Ignore their reluctance",
-      "C) Acknowledge their resistance, clarify expectations, and look for any possible engagement points",
-      "D) Immediately discharge them"
+      "A) A perfectly symmetrical shape",
+      "B) Higher standard deviation than normal distribution",
+      "C) The left tail longer; scores concentrated on the right",
+      "D) The right tail longer; scores concentrated on the left"
     ],
     "correct": 2,
     "explanation": "Meeting involuntary members' resistance with empathy, clarity about requirements, and respect can transform some level of resistance into partial engagement."
@@ -8619,10 +8619,10 @@ export const QUESTIONS = [
     "domain": "Group Counseling",
     "question": "The therapeutic factor of 'existential factors' in Yalom's model includes all of the following EXCEPT:",
     "options": [
-      "A) Recognizing ultimate responsibility for one's life",
-      "B) Accepting life's inherent unfairness",
-      "C) Confronting mortality and isolation",
-      "D) Avoiding meaningful relationships"
+      "A) The item discriminates well between high and low performers",
+      "B) 25% of people answered the item correctly",
+      "C) The item has adequate difficulty for differentiation",
+      "D) The item was answered correctly by 75% of people"
     ],
     "correct": 3,
     "explanation": "Existential factors involve confronting life's fundamental realities and isolation; avoiding meaningful relationships contradicts the therapeutic goal of authentic connection."
@@ -8691,10 +8691,10 @@ export const QUESTIONS = [
     "domain": "Group Counseling",
     "question": "According to group counseling best practices, how often should a group leader evaluate group progress?",
     "options": [
-      "A) Only at the end of the group",
-      "B) Never; evaluation is the member's responsibility",
-      "C) Continuously throughout the group and periodically through formal assessment",
-      "D) Only when problems arise"
+      "A) Ranges from -1 to +1",
+      "B) Can only be positive",
+      "C) Ranges from 0 to 100",
+      "D) Must exceed .70 to be meaningful"
     ],
     "correct": 2,
     "explanation": "Effective group leaders continuously monitor group health, member progress, and cohesion while also conducting periodic formal evaluations of outcomes."
@@ -8793,7 +8793,7 @@ export const QUESTIONS = [
       "D) Only negative emotions"
     ],
     "correct": 1,
-    "explanation": "True catharsis in Yalom's framework involves not just emotional expression, but emotional release paired with some understanding or meaning-making."
+    "explanation": "Criterion-referenced tests compare an individual's performance to a predetermined criterion or mastery standard rather than to other test-takers. Examples include competency exams. Norm-referenced tests compare individuals to others in the normative sample. Ipsative interpretation compares results within the individual across subtests."
   },
   {
     "domain": "Group Counseling",
@@ -8817,7 +8817,7 @@ export const QUESTIONS = [
       "D) Interpreted as group maturity"
     ],
     "correct": 1,
-    "explanation": "Such alliances often signal group anxiety about leader power or safety concerns; leaders should address them collaboratively to strengthen actual safety and trust."
+    "explanation": "The coefficient of determination (R-squared) is the correlation coefficient squared. For example, r=.9 yields R²=.81, meaning 81% of variance in the dependent variable is explained by the independent variable. The remaining 19% represents error or variance explained by other factors (coefficient of nondetermination)."
   },
   {
     "domain": "Group Counseling",
@@ -8835,10 +8835,10 @@ export const QUESTIONS = [
     "domain": "Group Counseling",
     "question": "A group leader notices that several members are arriving late to sessions. The most appropriate response is to:",
     "options": [
-      "A) Ignore the pattern",
-      "B) Privately confront the members harshly",
-      "C) Explore the pattern openly with the group to understand what it might indicate about cohesion or satisfaction",
-      "D) Remove the late members"
+      "A) Extreme pre-test scores will likely move closer to the mean on posttest",
+      "B) The standard deviation will decrease on posttest",
+      "C) All groups will show equal gains",
+      "D) The mean will shift upward over time"
     ],
     "correct": 2,
     "explanation": "Lateness patterns may indicate emerging problems with cohesion, engagement, or schedule fit; exploring them collaboratively helps identify and address underlying issues."
@@ -8859,10 +8859,10 @@ export const QUESTIONS = [
     "domain": "Group Counseling",
     "question": "Which of Yalom's factors is most directly related to reducing shame?",
     "options": [
-      "A) Instillation of hope",
-      "B) Universality—realizing that problems and feelings are shared",
-      "C) Catharsis",
-      "D) Imitative behavior"
+      "A) 9",
+      "B) 10",
+      "C) 6",
+      "D) 8"
     ],
     "correct": 1,
     "explanation": "Universality directly addresses shame by helping members see they are not alone, reducing the isolation and self-blame that shame perpetuates."
@@ -8889,7 +8889,7 @@ export const QUESTIONS = [
       "D) No need for intervention"
     ],
     "correct": 1,
-    "explanation": "When groups persistently avoid present-moment interactions and feelings, it usually signals anxiety about safety or conflict that the leader should gently name."
+    "explanation": "Type I error (alpha) occurs when you reject the null hypothesis when it is actually true, resulting in a false positive claim of significance. You conclude there is a difference when no true difference exists. As you lower the significance level (.05 to .01) to reduce Type I error, you increase the risk of Type II error."
   },
   {
     "domain": "Group Counseling",
@@ -8913,7 +8913,7 @@ export const QUESTIONS = [
       "D) Members avoid each other"
     ],
     "correct": 1,
-    "explanation": "Interpersonal learning occurs as members recognize their patterns, experiment with new relational approaches, and receive real-time feedback from peers."
+    "explanation": "Type II error (beta) is failing to reject the null hypothesis when it is false, resulting in a false negative. You conclude there is no difference when a true difference actually exists. The power of a test (1 - beta) increases with larger sample sizes, reducing Type II error risk."
   },
   {
     "domain": "Group Counseling",
@@ -8955,10 +8955,10 @@ export const QUESTIONS = [
     "domain": "Group Counseling",
     "question": "Which of the following is NOT a primary concern when evaluating group therapy effectiveness?",
     "options": [
-      "A) Member goal attainment and symptom reduction",
-      "B) Group cohesion and safety",
-      "C) Member satisfaction with group experience",
-      "D) The leader's personal preferences"
+      "A) Changes in performance because subjects know they are being observed",
+      "B) Changes in measurement instruments during the study",
+      "C) Researcher expectations influencing subject behavior",
+      "D) Regression toward the mean"
     ],
     "correct": 3,
     "explanation": "Evaluation should focus on objective outcomes (symptoms, goals), group process (cohesion, safety), and member experience—not the leader's subjective preferences."
@@ -8979,10 +8979,10 @@ export const QUESTIONS = [
     "domain": "Group Counseling",
     "question": "Research on group composition and diversity indicates that:",
     "options": [
-      "A) Homogeneous groups are always better",
-      "B) Heterogeneous groups offer more learning but require more skillful leadership",
-      "C) Diversity has no effect on groups",
-      "D) Diverse groups cannot develop cohesion"
+      "A) Maturation of subjects",
+      "B) Instrumentation changes",
+      "C) Adequate random assignment to conditions",
+      "D) Subject attrition/mortality"
     ],
     "correct": 1,
     "explanation": "Diverse groups provide more perspectives and learning opportunities but require skilled leadership to navigate difference and prevent subgrouping along identity lines."
@@ -9003,10 +9003,10 @@ export const QUESTIONS = [
     "domain": "Group Counseling",
     "question": "A leader's response to monopolizing should first involve:",
     "options": [
-      "A) Kicking the member out",
-      "B) Gently interrupting and redirecting while validating the member's need to be heard",
-      "C) Allowing unlimited time",
-      "D) Criticizing the member publicly"
+      "A) It uses qualitative data only",
+      "B) Random assignment to groups is not possible or not done",
+      "C) It requires only one subject or case",
+      "D) It has no dependent variable"
     ],
     "correct": 1,
     "explanation": "Initial intervention should respect the monopolizing member while protecting group equity—acknowledging their need and redirecting, with individual follow-up as needed."
@@ -9027,10 +9027,10 @@ export const QUESTIONS = [
     "domain": "Assessment & Testing",
     "question": "A counselor gives the same depression screening instrument to a client 2 weeks apart and obtains similar scores. What type of reliability is being demonstrated?",
     "options": [
-      "A) Internal consistency",
-      "B) Test-retest reliability",
-      "C) Inter-rater reliability",
-      "D) Construct reliability"
+      "A) Equal intervals between items",
+      "B) A true zero point",
+      "C) Ranked data with meaningful mathematical differences",
+      "D) Data classified in categories where numbers have no mathematical meaning"
     ],
     "correct": 1,
     "explanation": "Test-retest reliability involves administering the same test to the same group at different time points and correlating the scores, demonstrating temporal stability of measurement."
@@ -9051,10 +9051,10 @@ export const QUESTIONS = [
     "domain": "Assessment & Testing",
     "question": "Content validity requires expert judgment to determine whether:",
     "options": [
-      "A) Test items adequately sample the domain being measured",
-      "B) Scores predict future performance on a criterion",
-      "C) Different raters score consistently",
-      "D) The test correlates with similar established instruments"
+      "A) Equal intervals but no zero point",
+      "B) Categorical classification of data",
+      "C) No true mathematical relationships",
+      "D) A true zero point"
     ],
     "correct": 0,
     "explanation": "Content validity is established through expert review to ensure that test items adequately represent and comprehensively sample the content domain or construct in question."
@@ -9075,10 +9075,10 @@ export const QUESTIONS = [
     "domain": "Assessment & Testing",
     "question": "Predictive validity would be most important to establish for which type of assessment?",
     "options": [
-      "A) A screening instrument to identify current depression",
-      "B) A college admissions test predicting first-year GPA",
-      "C) A personality inventory assessing normal traits",
-      "D) An instrument measuring test anxiety during administration"
+      "A) There are 3 or more groups",
+      "B) The correlation between variables is very high",
+      "C) You want to increase statistical power",
+      "D) Data is nominal"
     ],
     "correct": 1,
     "explanation": "Predictive validity is essential for instruments designed to forecast future outcomes or performance, such as admission tests predicting academic success or aptitude tests predicting job performance."
@@ -9099,10 +9099,10 @@ export const QUESTIONS = [
     "domain": "Assessment & Testing",
     "question": "A test with a mean of 100 and standard deviation of 15 reports one client's score as 130. What is this client's z-score?",
     "options": [
-      "A) 1.0",
-      "B) 1.5",
-      "C) 2.0",
-      "D) 2.5"
+      "A) You have nominal (categorical) data",
+      "B) Data is ratio level with outliers",
+      "C) You want to compare means between groups",
+      "D) The distribution is perfectly normal"
     ],
     "correct": 1,
     "explanation": "The z-score formula is (X - Mean)/SD. (130 - 100)/15 = 30/15 = 2.0. Wait, let me recalculate: (130 - 100) = 30, divided by 15 = 2.0. Actually, the correct calculation is 2.0, so the answer should be C. Let me verify: 30/15 = 2.0. This is correct at C."
@@ -9123,10 +9123,10 @@ export const QUESTIONS = [
     "domain": "Assessment & Testing",
     "question": "A T-score is calculated using which formula?",
     "options": [
-      "A) (X - Mean)/SD × 10 + 50",
-      "B) (X - Mean)/SD × 100",
-      "C) Percentile rank/100 × 200",
-      "D) (X/Mean) × 100"
+      "A) A summary evaluation completed after program implementation ends",
+      "B) A one-time assessment conducted before program begins",
+      "C) An ongoing process evaluation to measure effectiveness during implementation",
+      "D) Evaluation conducted only in university research settings"
     ],
     "correct": 0,
     "explanation": "T-scores convert raw scores using the formula: (z-score × 10) + 50, resulting in a distribution with a mean of 50 and standard deviation of 10, commonly used in psychological assessment."
@@ -9147,10 +9147,10 @@ export const QUESTIONS = [
     "domain": "Assessment & Testing",
     "question": "Stanines divide the normal distribution into how many intervals?",
     "options": [
-      "A) 5",
-      "B) 7",
-      "C) 9",
-      "D) 10"
+      "A) You accept a 5% risk of rejecting the null hypothesis when it is actually true",
+      "B) Results are 5% likely to replicate in future studies",
+      "C) The sample must be at least 5% of the population size",
+      "D) 5% of collected data points should be excluded as outliers"
     ],
     "correct": 2,
     "explanation": "Stanines (standard nines) divide the normal distribution into 9 equal intervals, each representing approximately 11% of the population, with a mean of 5 and standard deviation of 2."
@@ -9177,7 +9177,7 @@ export const QUESTIONS = [
       "D) Their own previous performance"
     ],
     "correct": 2,
-    "explanation": "Norm-referenced assessment interprets individual scores relative to the performance of a normative sample, providing information about relative standing within a distribution of scores."
+    "explanation": "The Rosenthal effect, also called experimenter bias or the Pygmalion effect, refers to how researcher expectations and behaviors unconsciously influence subject performance and results. When researchers expect certain outcomes, they may subtly reinforce those outcomes through their interactions with subjects."
   },
   {
     "domain": "Assessment & Testing",
@@ -9195,10 +9195,10 @@ export const QUESTIONS = [
     "domain": "Assessment & Testing",
     "question": "The Wechsler Adult Intelligence Scale (WAIS) provides what type of IQ score?",
     "options": [
-      "A) Verbal IQ only",
-      "B) Performance IQ only",
-      "C) Full Scale IQ along with index scores",
-      "D) Achievement IQ only"
+      "A) Assumes multiple realities socially constructed by individuals and groups",
+      "B) Uses standardized measurement instruments exclusively",
+      "C) Assumes a single objective reality independent of observers",
+      "D) Uses statistical hypothesis testing as primary analysis method"
     ],
     "correct": 2,
     "explanation": "The WAIS provides a Full Scale IQ score and composite index scores (Verbal Comprehension, Perceptual Reasoning, Working Memory, Processing Speed), allowing for profile analysis of cognitive strengths and weaknesses."
@@ -9219,10 +9219,10 @@ export const QUESTIONS = [
     "domain": "Assessment & Testing",
     "question": "The Stanford-Binet Intelligence Scales (current version) measure intelligence using which approach?",
     "options": [
-      "A) Verbal and Performance subtests only",
-      "B) Five factors of cognitive ability",
-      "C) Fluid and crystallized intelligence",
-      "D) Processing speed and memory only"
+      "A) Only used in laboratory settings with strict experimental controls",
+      "B) Pure experimental research with random assignment required",
+      "C) Conducted to improve services or a program, having an evaluative function",
+      "D) Requires longitudinal follow-up over at least 12 months"
     ],
     "correct": 1,
     "explanation": "The current Stanford-Binet (SB-5) measures cognitive ability through five factors: Fluid Reasoning, Knowledge, Quantitative Reasoning, Visual-Spatial Processing, and Working Memory."
@@ -9243,10 +9243,10 @@ export const QUESTIONS = [
     "domain": "Assessment & Testing",
     "question": "What is the primary purpose of MMPI-2 validity scales?",
     "options": [
-      "A) To measure the client's overall mental health",
-      "B) To detect inconsistent, random, or defensive responding",
-      "C) To diagnose specific psychiatric disorders",
-      "D) To measure intelligence and cognitive functioning"
+      "A) Selecting the most convenient participants available",
+      "B) Ensuring equal representation of all demographic groups regardless of population proportion",
+      "C) Ensuring major subgroups in the population are represented proportionally in the sample",
+      "D) Using only volunteers who self-select into the study"
     ],
     "correct": 1,
     "explanation": "MMPI-2 validity scales (Cannot Say, L, F, K, F-Back) assess response patterns to determine whether the profile is valid and interpretable, detecting random responding, over-reporting, or under-reporting of symptoms."
@@ -9267,10 +9267,10 @@ export const QUESTIONS = [
     "domain": "Assessment & Testing",
     "question": "The NEO-PI-R measures the Five-Factor Model of personality, which includes all of the following EXCEPT:",
     "options": [
-      "A) Openness to Experience",
-      "B) Agreeableness",
-      "C) Emotional Stability (Neuroticism)",
-      "D) Introversion"
+      "A) Compare four different treatment conditions in parallel",
+      "B) Measure outcome using four different instruments for triangulation",
+      "C) Examine the effect of pretesting on the experimental treatment and outcomes",
+      "D) Test hypotheses about four different outcome variables"
     ],
     "correct": 3,
     "explanation": "The Five-Factor Model includes Openness, Conscientiousness, Extraversion, Agreeableness, and Neuroticism (Emotional Stability). Introversion is the opposite pole of Extraversion, not a separate factor."
@@ -9291,10 +9291,10 @@ export const QUESTIONS = [
     "domain": "Assessment & Testing",
     "question": "Achievement tests are designed to measure:",
     "options": [
-      "A) Innate intellectual ability and potential",
-      "B) Knowledge and skills acquired through instruction",
-      "C) Career interests and job preferences",
-      "D) Personality traits and coping styles"
+      "A) Causal-comparative research studying relationships after the fact",
+      "B) A true experiment with random assignment to conditions",
+      "C) Qualitative exploration of researchers' lived experiences",
+      "D) Experimental research limited to animal subjects"
     ],
     "correct": 1,
     "explanation": "Achievement tests assess learned knowledge and skills in specific domains, such as reading, mathematics, or academic subject areas, typically used in educational settings."
@@ -9315,10 +9315,10 @@ export const QUESTIONS = [
     "domain": "Assessment & Testing",
     "question": "The Strong Interest Inventory is used primarily for:",
     "options": [
-      "A) Measuring intelligence and cognitive abilities",
-      "B) Identifying personality disorders",
-      "C) Career counseling and vocational guidance",
-      "D) Screening for depression and anxiety"
+      "A) Analyze qualitative data with multiple coders",
+      "B) Control the influence of confounding variables on the dependent variable while comparing groups",
+      "C) Compare nominal or categorical data distributions",
+      "D) Test interactions between multiple independent variables"
     ],
     "correct": 2,
     "explanation": "The Strong Interest Inventory is a career interest inventory that compares an individual's interests to those of satisfied workers in various occupations, supporting career exploration and planning."
@@ -9339,10 +9339,10 @@ export const QUESTIONS = [
     "domain": "Assessment & Testing",
     "question": "The Rorschach Inkblot Test is classified as what type of assessment?",
     "options": [
-      "A) Norm-referenced objective test",
-      "B) Criterion-referenced test",
-      "C) Projective personality test",
-      "D) Intelligence test"
+      "A) A single large study analyzing multiple variables",
+      "B) An in-depth case study examining one phenomenon",
+      "C) A qualitative interview method using meta-cognition",
+      "D) Statistical synthesis comparing and integrating findings across multiple studies"
     ],
     "correct": 2,
     "explanation": "The Rorschach is a projective test using ambiguous inkblots to elicit responses that may reveal personality functioning, thought processes, and emotional dynamics, though its psychometric properties remain controversial."
@@ -9363,10 +9363,10 @@ export const QUESTIONS = [
     "domain": "Assessment & Testing",
     "question": "A functional behavioral assessment in counseling would include all of the following EXCEPT:",
     "options": [
-      "A) Identifying antecedent events that trigger the behavior",
-      "B) Observing the frequency and intensity of the target behavior",
-      "C) Identifying childhood trauma underlying the behavior",
-      "D) Analyzing the consequences that maintain the behavior"
+      "A) Whether the study uses environmental variables as predictors",
+      "B) Whether the study is conducted in naturalistic outdoor settings",
+      "C) Whether results can be generalized from one setting or population to another",
+      "D) Whether the study includes animal subjects or models"
     ],
     "correct": 2,
     "explanation": "Functional behavioral assessment examines the A-B-C model (Antecedents-Behavior-Consequences) and observable patterns; identifying unconscious childhood trauma is more aligned with psychodynamic approaches rather than behavioral assessment."
