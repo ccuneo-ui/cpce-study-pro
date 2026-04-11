@@ -14,6 +14,7 @@ import AccountScreen from "./components/AccountScreen";
 import UpgradeScreen from "./components/UpgradeScreen";
 import PaywallModal from "./components/PaywallModal";
 import LegalScreen from "./components/LegalScreen";
+import LandingPage from "./components/LandingPage";
 
 const DOMAINS = [...new Set(QUESTIONS.map(q => q.domain))];
 const STORAGE_KEY = "compexampro-stats";
@@ -186,13 +187,23 @@ export default function CompExamProApp() {
     );
   }
 
-  // ── Auth screen (show if not logged in and hasn't skipped) ──
-  if (!user && !skippedAuth) {
+  // ── Auth screen ──
+  if (!user && !skippedAuth && screen === "auth") {
     return (
       <AuthScreen
         onSignUp={signUp}
         onSignIn={signIn}
         onSkip={handleSkipAuth}
+      />
+    );
+  }
+
+  // ── Landing page (show to non-authenticated visitors) ──
+  if (!user && !skippedAuth) {
+    return (
+      <LandingPage
+        onGetStarted={() => setScreen("auth")}
+        onSignIn={() => setScreen("auth")}
       />
     );
   }
