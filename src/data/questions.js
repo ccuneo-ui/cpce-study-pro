@@ -10983,13 +10983,13 @@ export const QUESTIONS = [
     "domain": "Research & Program Evaluation",
     "question": "A researcher examining school counselor experiences during a pandemic conducts monthly interviews as events unfold. This approach best represents:",
     "options": [
-      "A) Have no impact on results, within professional context",
-      "B) Paper, digital, and interview formats may yield different response patterns",
-      "C) All produce identical results, considering client needs",
-      "D) Irrelevant to interpretation, maintaining therapeutic boundaries"
+      "A) Retrospective cross-sectional quantitative research",
+      "B) Prospective longitudinal qualitative research",
+      "C) Randomized controlled experimental research",
+      "D) Meta-analytic review of existing literature"
     ],
     "correct": 1,
-    "explanation": "Prospective longitudinal qualitative research collects data over time as events occur, allowing understanding of processes and change."
+    "explanation": "Prospective longitudinal qualitative research collects data over time as events occur, allowing understanding of processes and change. Monthly interviews conducted as events unfold captures change over time (longitudinal), looks forward rather than back (prospective), and uses rich narrative data rather than numerical measurement (qualitative)."
   },
   {
     "domain": "Research & Program Evaluation",
