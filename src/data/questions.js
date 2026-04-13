@@ -1071,10 +1071,10 @@ export const QUESTIONS = [
     "domain": "Assessment & Testing",
     "question": "Construct validity is established when:",
     "options": [
-      "A) Conflict and disagreement in all group interactions",
-      "B) Individual competition and self-interest dominating group dynamics",
-      "C) The test measures the hypothetical construct it claims to measure",
-      "D) Leadership dominance with minimal member participation"
+      "A) Test items appear relevant to the construct to a layperson reviewer",
+      "B) The test correlates highly with one other measure of any construct",
+      "C) The test measures the hypothetical construct it claims to measure, supported by convergent and discriminant evidence",
+      "D) The test produces consistent scores when re-administered to the same group"
     ],
     "correct": 2,
     "explanation": "Construct validity means a test measures the hypothetical construct it claims to measure. It includes convergent validity (high correlation with related constructs) and discriminant validity (no significant correlation with unrelated constructs)."
@@ -9567,10 +9567,10 @@ export const QUESTIONS = [
     "domain": "Assessment & Testing",
     "question": "Ceiling effects on a test occur when:",
     "options": [
-      "A) Test items are redundant and unnecessarily repetitive in content",
-      "B) The test measures different constructs in different samples",
-      "C) The test produces consistent results across administrations and is internally consistent",
-      "D) The test has no correlation with other established measures"
+      "A) Many low-functioning individuals cluster near the minimum possible score",
+      "B) Many high-functioning individuals cluster near the maximum possible score, limiting discrimination at the upper range",
+      "C) Test items are poorly worded and confusing to most test-takers",
+      "D) The test produces inconsistent results across administrations"
     ],
     "correct": 1,
     "explanation": "Ceiling effects occur when many high-functioning individuals score at or near the maximum possible score, preventing the test from discriminating among high-ability individuals and limiting usefulness."
@@ -9579,10 +9579,10 @@ export const QUESTIONS = [
     "domain": "Assessment & Testing",
     "question": "Floor effects on a test create problems because:",
     "options": [
-      "A) The test predicts future behavior in all contexts",
-      "B) The test appears to be valid on its face to test-takers",
-      "C) The test measures what it claims to measure based on research evidence",
-      "D) The test correlates with other tests given simultaneously"
+      "A) The test becomes too easy for high-functioning individuals",
+      "B) Many low-functioning individuals score near the minimum, preventing discrimination among those with severe impairment",
+      "C) The test items become culturally biased against diverse populations",
+      "D) The test correlates too highly with other tests measuring the same construct"
     ],
     "correct": 1,
     "explanation": "Floor effects occur when many low-functioning individuals score at or near the minimum, preventing the test from discriminating among those with severe impairment and limiting clinical utility."
@@ -9615,10 +9615,10 @@ export const QUESTIONS = [
     "domain": "Assessment & Testing",
     "question": "Convergent validity is demonstrated when:",
     "options": [
-      "A) Whether test items are logically organized and sequenced appropriately",
-      "B) Whether the test measures what it purports to measure for a specific purpose",
-      "C) The total number of questions on the test and item complexity",
-      "D) The relative difficulty level of all test items across different domains"
+      "A) A test shows no relationship to measures of unrelated constructs",
+      "B) A test correlates strongly with other established measures of the same construct",
+      "C) A test produces consistent results across multiple administrations",
+      "D) A test appears relevant to the construct upon superficial review"
     ],
     "correct": 1,
     "explanation": "Convergent validity provides evidence that a test correlates with other measures of the same construct, supporting the notion that all measures assess the intended construct."
@@ -9627,10 +9627,10 @@ export const QUESTIONS = [
     "domain": "Assessment & Testing",
     "question": "Discriminant validity is supported when:",
     "options": [
-      "A) Any test that measures general intelligence, across diverse client populations",
-      "B) A test specifically designed to predict future performance in a particular domain",
-      "C) Any test administered to multiple people, within varied contextual settings",
-      "D) A test that measures personality traits, for multicultural counseling applications"
+      "A) A test correlates strongly with measures of the same construct",
+      "B) A test does NOT correlate strongly with measures of different, unrelated constructs",
+      "C) A test reliably produces the same results on repeated administration",
+      "D) A test accurately predicts future behavior or performance"
     ],
     "correct": 1,
     "explanation": "Discriminant validity demonstrates that a test does NOT correlate strongly with measures of different constructs, supporting evidence that the test measures a specific construct rather than something general."
@@ -9975,10 +9975,10 @@ export const QUESTIONS = [
     "domain": "Assessment & Testing",
     "question": "An assessment with low ceiling effects would be most suitable for:",
     "options": [
-      "A) Counselors must interpret all tests without any limitations whatsoever",
-      "B) Counselors should recognize assessment limitations and avoid over-interpretation",
-      "C) Test scores determine treatment outcomes completely and exclusively",
-      "D) Assessment results are always objective and unambiguous in interpretation"
+      "A) Clients with severe cognitive impairment requiring basic skill assessment",
+      "B) Assessing high-functioning or gifted individuals where discrimination at the upper range is needed",
+      "C) Screening large populations for any type of impairment quickly",
+      "D) Clients who have difficulty completing standardized tests due to anxiety"
     ],
     "correct": 1,
     "explanation": "Tests without ceiling effects can discriminate among high-ability individuals because they have sufficient difficult items; they provide better measurement across the full range of functioning."
@@ -9999,10 +9999,10 @@ export const QUESTIONS = [
     "domain": "Assessment & Testing",
     "question": "What is the primary value of using multiple assessment methods (e.g., interviews, questionnaires, observation)?",
     "options": [
-      "A) Only income matters in career choice significantly",
-      "B) Interests, abilities, and values determine career satisfaction and engagement",
-      "C) Career exploration is unnecessary for successful job placement",
-      "D) Career interests are static and completely unchanging"
+      "A) It allows counselors to charge clients for additional services and assessments",
+      "B) It reduces the time needed to complete the diagnostic process",
+      "C) Triangulation cross-validates findings, reducing error from single-method limitations and yielding a more robust understanding",
+      "D) It eliminates the need for clinical judgment and interpretation"
     ],
     "correct": 2,
     "explanation": "Multimethod assessment (triangulation) uses different assessment approaches to cross-validate findings, reducing error from single-method limitations and providing a more robust understanding of client functioning."
@@ -10059,10 +10059,10 @@ export const QUESTIONS = [
     "domain": "Assessment & Testing",
     "question": "When administering a timed test, exceeding the time limit and then extending it:",
     "options": [
-      "A) Career and personal life are completely separate domains",
-      "B) Life goals influence career planning and satisfaction significantly",
-      "C) Career counseling ignores personal values and relationships entirely",
-      "D) Work-life balance has no effect on career success"
+      "A) Is acceptable as long as the client consents to the extension",
+      "B) Violates standardization and makes the results non-comparable to the normative sample",
+      "C) Improves accuracy by reducing the influence of anxiety on performance",
+      "D) Has no effect on validity as long as total administration time is documented"
     ],
     "correct": 1,
     "explanation": "Standardized time limits are part of the test's standardization; changing them alters what the test measures and makes results non-comparable to the normative sample and other test-takers."
@@ -10923,13 +10923,13 @@ export const QUESTIONS = [
     "domain": "Research & Program Evaluation",
     "question": "Construct validity in outcome measurement for counseling would involve:",
     "options": [
-      "A) All assessment instruments are equally valid across different settings",
-      "B) Assessment validity may differ across settings and populations requiring consideration",
-      "C) Context has no meaningful influence on test interpretation",
-      "D) A test valid in one setting applies identically elsewhere"
+      "A) Ensuring the measure actually assesses the intended theoretical construct, such as therapeutic alliance or self-efficacy",
+      "B) Confirming the measure produces the same score each time it is administered",
+      "C) Verifying that clients find the measure easy to understand and complete",
+      "D) Demonstrating that the measure predicts future therapy attendance"
     ],
     "correct": 0,
-    "explanation": "Construct validity ensures the measure actually assesses the intended theoretical construct (e.g., therapeutic alliance, self-efficacy)."
+    "explanation": "Construct validity ensures the measure actually assesses the intended theoretical construct (e.g., therapeutic alliance, self-efficacy). In counseling outcome research, this means selecting instruments that genuinely measure the therapeutic variable of interest rather than something related but distinct."
   },
   {
     "domain": "Research & Program Evaluation",
