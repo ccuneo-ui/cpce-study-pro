@@ -1,8 +1,8 @@
-import { C, sCard, globalCSS } from "../lib/constants";
+import { go } from "../ui";
 
 const PRIVACY_POLICY = {
   title: "Privacy Policy",
-  lastUpdated: "April 11, 2026",
+  lastUpdated: "November 21, 2026",
   sections: [
     {
       heading: "Information We Collect",
@@ -10,7 +10,7 @@ const PRIVACY_POLICY = {
     },
     {
       heading: "How We Use Your Information",
-      text: "We use your information to provide and improve CompExamPro, including: authenticating your account, tracking your study progress across devices, processing subscription payments through Stripe, and analyzing aggregate usage patterns to improve the product. We do not sell your personal information to third parties."
+      text: "We use your information to provide and improve CompExamPro, including authenticating your account, tracking your study progress across devices, processing subscription payments through Stripe, and analyzing aggregate usage patterns to improve the product. We do not sell your personal information to third parties."
     },
     {
       heading: "Payment Processing",
@@ -22,11 +22,11 @@ const PRIVACY_POLICY = {
     },
     {
       heading: "Your Rights",
-      text: "You may access, update, or delete your account information at any time by contacting us. You may cancel your subscription at any time through your account settings. Upon account deletion, we will remove your personal data from our active systems within 30 days."
+      text: "You may access, update, or delete your account information at any time by contacting us. You may cancel your subscription at any time by emailing support@compexampro.com from your account address. Upon account deletion, we will remove your personal data from our active systems within 30 days."
     },
     {
       heading: "Cookies and Local Storage",
-      text: "CompExamPro uses browser local storage to save your study progress locally for offline access and faster performance. We use Vercel Analytics for basic, privacy-friendly usage analytics. We do not use advertising cookies or tracking pixels."
+      text: "CompExamPro uses browser local storage to save your study progress locally for offline access and faster performance. We use Vercel Analytics for basic, privacy-friendly usage analytics. We also use a Google Ads conversion tag to measure whether our advertising leads to sign-ups; Google may set cookies for that purpose. We do not sell your data or show third-party ads inside CompExamPro."
     },
     {
       heading: "Children's Privacy",
@@ -45,7 +45,7 @@ const PRIVACY_POLICY = {
 
 const TERMS_OF_SERVICE = {
   title: "Terms of Service",
-  lastUpdated: "April 11, 2026",
+  lastUpdated: "November 21, 2026",
   sections: [
     {
       heading: "Acceptance of Terms",
@@ -65,7 +65,7 @@ const TERMS_OF_SERVICE = {
     },
     {
       heading: "Educational Disclaimer",
-      text: "CompExamPro is an independent educational resource. It is not affiliated with, endorsed by, or associated with the National Board for Certified Counselors (NBCC), the Center for Credentialing and Education (CCE), the Council for Accreditation of Counseling and Related Educational Programs (CACREP), or any state licensing board. CPCE, NCE, and NCMHCE are trademarks of their respective owners. Our practice questions are original educational content and are not actual exam questions."
+      text: "CompExamPro is an independent educational resource. It is not affiliated with, endorsed by, or associated with the National Board for Certified Counselors (NBCC), the Center for Credentialing and Education (CCE), the Council for Accreditation of Counseling and Related Educational Programs (CACREP), or any state licensing board. CPCE, NCE, and NCMHCE are trademarks of their respective owners. Our practice questions are original educational content, drafted with the assistance of AI tools and checked against published professional sources. They are not actual exam questions."
     },
     {
       heading: "No Guarantee of Results",
@@ -98,39 +98,19 @@ const TERMS_OF_SERVICE = {
   ]
 };
 
-function LegalContent({ doc }) {
+export default function Legal({ page }) {
+  const doc = page === "privacy" ? PRIVACY_POLICY : TERMS_OF_SERVICE;
   return (
-    <>
-      <h2 style={{ fontSize: 22, fontWeight: 700, marginBottom: 6 }}>{doc.title}</h2>
-      <p style={{ fontSize: 12, color: C.dim, marginBottom: 24 }}>Last updated: {doc.lastUpdated}</p>
-      {doc.sections.map((s, i) => (
-        <div key={i} style={{ marginBottom: 20 }}>
-          <h3 style={{ fontSize: 15, fontWeight: 700, marginBottom: 6, color: C.al }}>{s.heading}</h3>
-          <p style={{ fontSize: 14, lineHeight: 1.7, color: C.dim }}>{s.text}</p>
+    <div className="narrow page stack" style={{ "--gap": "18px" }}>
+      <h2>{doc.title}</h2>
+      <p className="small muted">Last updated {doc.lastUpdated}</p>
+      {doc.sections.map((s) => (
+        <div key={s.heading} className="stack" style={{ "--gap": "6px" }}>
+          <h3>{s.heading}</h3>
+          <p className="muted" style={{ maxWidth: "70ch" }}>{s.text}</p>
         </div>
       ))}
-    </>
-  );
-}
-
-export default function LegalScreen({ page, onBack }) {
-  const doc = page === "privacy" ? PRIVACY_POLICY : TERMS_OF_SERVICE;
-
-  return (
-    <div style={{ fontFamily: "'DM Sans', sans-serif", color: C.text, minHeight: "100vh", background: C.bg, padding: 20, maxWidth: 600, margin: "0 auto" }}>
-      <style>{globalCSS}</style>
-      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 24 }}>
-        <div style={{ fontSize: 14, fontWeight: 700, color: C.accent, textTransform: "uppercase", letterSpacing: 3 }}>CompExamPro</div>
-        <button onClick={onBack} style={{ background: "none", border: "none", color: C.dim, cursor: "pointer", fontSize: 14, fontFamily: "inherit" }}>← Back</button>
-      </div>
-      <div style={{ ...sCard }}>
-        <LegalContent doc={doc} />
-      </div>
-      <div style={{ textAlign: "center", padding: 20, fontSize: 12, color: C.dim }}>
-        <button onClick={() => onBack()} style={{ background: "none", border: "none", color: C.accent, cursor: "pointer", fontFamily: "inherit", fontSize: 12 }}>
-          {page === "privacy" ? "View Terms of Service" : "View Privacy Policy"}
-        </button>
-      </div>
+      <div><button className="link" onClick={() => go(page === "privacy" ? "/terms" : "/privacy")}>{page === "privacy" ? "Read the Terms of Service" : "Read the Privacy Policy"}</button></div>
     </div>
   );
 }

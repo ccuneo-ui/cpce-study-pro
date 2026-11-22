@@ -8,12 +8,16 @@ const AuthContext = createContext({
   signUp: async () => {},
   signIn: async () => {},
   signOut: async () => {},
+  resetPassword: async () => {},
+  updatePassword: async () => {},
+  recovering: false,
 });
 
 export function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
   const [session, setSession] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [recovering, setRecovering] = useState(false);
 
   useEffect(() => {
     if (!supabase) {
@@ -30,7 +34,8 @@ export function AuthProvider({ children }) {
 
     // Listen for auth changes
     const { data: { subscription } } = supabase.auth.onAuthStateChange(
-      (_event, session) => {
+      (event, session) => {
+        if (event === "PASSWORD_RECOVERY") setRecovering(true);
         setSession(session);
         setUser(session?.user ?? null);
       }
@@ -56,8 +61,20 @@ export function AuthProvider({ children }) {
     await supabase.auth.signOut();
   };
 
+  const resetPassword = async (email) => {
+    if (!supabase) return { error: { message: "Auth not configured" } };
+    return supabase.auth.resetPasswordForEmail(email, { redirectTo: window.location.origin + "/" });
+  };
+
+  const updatePassword = async (password) => {
+    if (!supabase) return { error: { message: "Auth not configured" } };
+    const res = await supabase.auth.updateUser({ password });
+    if (!res.error) setRecovering(false);
+    return res;
+  };
+
   return (
-    <AuthContext.Provider value={{ user, session, loading, signUp, signIn, signOut }}>
+    <AuthContext.Provider value={{ user, session, loading, signUp, signIn, signOut, resetPassword, updatePassword, recovering }}>
       {children}
     </AuthContext.Provider>
   );
